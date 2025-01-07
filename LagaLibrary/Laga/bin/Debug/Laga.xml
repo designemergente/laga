@@ -49,6 +49,15 @@
             <param name="index">index</param>
             <returns>T</returns>
         </member>
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.GetGenes(System.Int32,System.Int32)">
+            <summary>
+            GEt the genes from the start and end index.
+            </summary>
+            <param name="indexStart">The index at start</param>
+            <param name="indexEnd">The index at the end</param>
+            <returns>List</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Chromosome`1.SetGene(System.Int32,`0)">
             <summary>
             set a gene at a specific index
@@ -474,6 +483,26 @@
             IEnumerator
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.SelectChromosome(System.String)">
+            <summary>
+            Select a chromosome using the specified selection method.
+            </summary>
+            <param name="selectionType">The type of selection to perform ("roulette" or "tournament").</param>
+            <returns>The selected chromosome.</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.RouletteWheelSelection">
+            <summary>
+            Roulette Wheel Selection: Selects a chromosome based on relative fitness.
+            </summary>
+            <returns>A chromosome selected by roulette wheel.</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.TournamentSelection(System.Int32)">
+            <summary>
+            Tournament Selection: Selects the best chromosome from a random subset.
+            </summary>
+            <param name="tournamentSize">The number of chromosomes in the tournament.</param>
+            <returns>A chromosome selected by tournament.</returns>
         </member>
         <member name="T:Laga.GeneticAlgorithm.RankingSort">
             <summary>
@@ -1048,7 +1077,7 @@
         </member>
         <member name="M:Laga.Numbers.Tools.DataReport``1(System.Collections.Generic.List{``0})">
             <summary>
-            Creates a report based on a list of data.
+            Creates a report based on a list of binary.
             </summary>
             <param name="listValues">the Values used to create the report</param>
             <returns><![CDATA[List<string>]]></returns>
@@ -1060,6 +1089,13 @@
             <typeparam name="T">Chr type</typeparam>
             <param name="chromosome">your Chr</param>
             <returns>int</returns>
+        </member>
+        <member name="M:Laga.Numbers.Tools.BinaryToInteger(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Convert a List of 1s and 0s to an integer.
+            </summary>
+            <param name="binary">binary to convert</param>
+            <returns>integer number</returns>
         </member>
         <member name="M:Laga.Numbers.Tools.ExtractDNA``1(``0[],System.Int32,System.Int32)">
             <summary>
@@ -1184,8 +1220,8 @@
             <summary>
             Experimental Shuffle algorithm to shuffle the original array.
             </summary>
-            <typeparam name="T">the type of data</typeparam>
-            <param name="arrData">the array of data</param>
+            <typeparam name="T">the type of binary</typeparam>
+            <param name="arrData">the array of binary</param>
         </member>
         <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Object[])">
             <summary>

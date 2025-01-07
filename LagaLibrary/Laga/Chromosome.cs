@@ -90,6 +90,24 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// GEt the genes from the start and end index.
+        /// </summary>
+        /// <param name="indexStart">The index at start</param>
+        /// <param name="indexEnd">The index at the end</param>
+        /// <returns>List</returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public List<T> GetGenes(int indexStart, int indexEnd)
+        {
+            // Validate inputs to ensure indexEnd is inclusive
+            if (indexStart < 0 || indexEnd >= genes.Count || indexStart > indexEnd)
+                throw new ArgumentOutOfRangeException("Invalid start or end index.");
+
+            // Calculate the count from the start and end indices
+            int count = indexEnd - indexStart + 1;
+            return genes.GetRange(indexStart, count);
+        }
+
+        /// <summary>
         /// set a gene at a specific index
         /// </summary>
         /// <param name="index">The location in the Chr</param>

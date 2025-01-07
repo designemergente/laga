@@ -156,5 +156,68 @@ namespace Laga.GeneticAlgorithm
             return chromosomes.GetEnumerator();
         }
 
+        //Natural Selection part
+
+        /// <summary>
+        /// Select a chromosome using the specified selection method.
+        /// </summary>
+        /// <param name="selectionType">The type of selection to perform ("roulette" or "tournament").</param>
+        /// <returns>The selected chromosome.</returns>
+        public Chromosome<T> SelectChromosome(string selectionType = "roulette")
+        {
+            switch (selectionType.ToLower())
+            {
+                case "roulette":
+                    return RouletteWheelSelection();
+                case "tournament":
+                    return TournamentSelection();
+                default:
+                    throw new InvalidOperationException("Selection method not supported.");
+            }
+        }
+
+        /// <summary>
+        /// Roulette Wheel Selection: Selects a chromosome based on relative fitness.
+        /// </summary>
+        /// <returns>A chromosome selected by roulette wheel.</returns>
+        private Chromosome<T> RouletteWheelSelection()
+        {
+            double totalFitness = SumFitness();  // Get total fitness of the population
+            double randomValue = new Random().NextDouble() * totalFitness;  // Random value between 0 and total fitness
+
+            double cumulativeFitness = 0;
+            foreach (var chromosome in chromosomes)
+            {
+                cumulativeFitness += chromosome.Fitness;
+                if (cumulativeFitness >= randomValue)
+                    return chromosome;
+            }
+
+            // Fallback: Return the last chromosome if something goes wrong (should not happen in theory)
+            return chromosomes.Last();
+        }
+
+        /// <summary>
+        /// Tournament Selection: Selects the best chromosome from a random subset.
+        /// </summary>
+        /// <param name="tournamentSize">The number of chromosomes in the tournament.</param>
+        /// <returns>A chromosome selected by tournament.</returns>
+        private Chromosome<T> TournamentSelection(int tournamentSize = 3)
+        {
+            Random rand = new Random();
+            List<Chromosome<T>> tournamentChromosomes = new List<Chromosome<T>>();
+
+            // Randomly select chromosomes for the tournament
+            for (int i = 0; i < tournamentSize; i++)
+            {
+                int randomIndex = rand.Next(chromosomes.Count);
+                tournamentChromosomes.Add(chromosomes[randomIndex]);
+            }
+
+            // Return the chromosome with the highest fitness from the tournament
+            return tournamentChromosomes.OrderByDescending(c => c.Fitness).First();
+        }
+
+
     }
 }

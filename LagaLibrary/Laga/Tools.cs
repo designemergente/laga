@@ -67,7 +67,7 @@ namespace Laga.Numbers
         }
 
         /// <summary>
-        /// Creates a report based on a list of data.
+        /// Creates a report based on a list of binary.
         /// </summary>
         /// <param name="listValues">the Values used to create the report</param>
         /// <returns><![CDATA[List<string>]]></returns>
@@ -108,6 +108,16 @@ namespace Laga.Numbers
             {
                 return Convert.ToInt32(s, 2);
             }
+        }
+
+        /// <summary>
+        /// Convert a List of 1s and 0s to an integer.
+        /// </summary>
+        /// <param name="binary">binary to convert</param>
+        /// <returns>integer number</returns>
+        public static int BinaryToInteger(List<int> binary)
+        {
+            return binary.Aggregate(0, (acc, bit) => (acc << 1) | bit);
         }
 
         /// <summary>
@@ -359,8 +369,8 @@ namespace Laga.Numbers
         /// <summary>
         /// Experimental Shuffle algorithm to shuffle the original array.
         /// </summary>
-        /// <typeparam name="T">the type of data</typeparam>
-        /// <param name="arrData">the array of data</param>
+        /// <typeparam name="T">the type of binary</typeparam>
+        /// <param name="arrData">the array of binary</param>
         public static void Fisher_Yates<T>(this T[] arrData)
         {
             int n = arrData.Length;

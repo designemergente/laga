@@ -26,10 +26,11 @@ namespace LagaExamples
         private static ConsoleKeyInfo UI()
         {
             Console.WriteLine("Select an example to run:\n");
-            Console.WriteLine("1. Random value Examples");
+            Console.WriteLine("1. Random Values Examples");
             Console.WriteLine("2. Chromosome Examples");
             Console.WriteLine("3. Math Functions");
             Console.WriteLine("4. Population Examples");
+            Console.WriteLine("5. Math Equality Problem");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -46,6 +47,9 @@ namespace LagaExamples
                     break;
                 case '4':
                     TestingPopulation.Run();
+                    break;
+                case '5':
+                    MathEqualityProblem.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

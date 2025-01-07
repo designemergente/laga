@@ -11,8 +11,8 @@ namespace LagaExamples
         {
             Console.WriteLine("\n /// - Examples of Laga.GeneticAlgorithm.Population() - /// \n");
 
-            Population<char> pop = new Population<char>(20);
-            for (int i = 0; i < 20; i++)
+            Population<char> pop = new Population<char>(10);
+            for (int i = 0; i < 10; i++)
                 pop.Add(new Chromosome<char>(FitnessFunc, GenrGenes.Rand_Char(10, 97, 123).ToList()));
 
             Console.WriteLine(pop.ToString());
