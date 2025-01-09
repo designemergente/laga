@@ -50,7 +50,7 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2024.12.4": {
+      "Laga/2025.1.9": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -174,7 +174,7 @@
         "version.txt"
       ]
     },
-    "Laga/2024.12.4": {
+    "Laga/2025.1.9": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -182,7 +182,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2024.12.4",
+      "Laga >= 2025.1.9",
       "Microsoft.CSharp >= 4.7.0",
       "RhinoCommon >= 7.36.23346.16351",
       "System.Data.DataSetExtensions >= 4.5.0"
@@ -193,7 +193,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2024.12.4",
+    "version": "2025.1.9",
     "restore": {
       "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "projectName": "LagaRhino",

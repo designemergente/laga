@@ -484,14 +484,17 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.SelectChromosome(System.String)">
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Selection(System.String,System.Boolean,System.Int32,System.Boolean,System.Int32)">
             <summary>
             Select a chromosome using the specified selection method.
             </summary>
-            <param name="selectionType">The type of selection to perform ("roulette" or "tournament").</param>
-            <returns>The selected chromosome.</returns>
+            <param name="method">The type of selection to perform ("roulette" or "tournament").</param>
+            <param name="invert">invert the fitness for roulettewheel method</param>
+            <param name="tournamentSize"></param>
+            <param name="elitism"></param>
+            <param name="elitCount"></param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.RouletteWheelSelection">
+        <member name="M:Laga.GeneticAlgorithm.Population`1.RouletteWheelSelection(Laga.GeneticAlgorithm.Population{`0}.PrecomputedFitness)">
             <summary>
             Roulette Wheel Selection: Selects a chromosome based on relative fitness.
             </summary>
@@ -503,6 +506,14 @@
             </summary>
             <param name="tournamentSize">The number of chromosomes in the tournament.</param>
             <returns>A chromosome selected by tournament.</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Crossover(System.String,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="method"></param>
+            <param name="rate"></param>
+            <exception cref="T:System.InvalidOperationException"></exception>
         </member>
         <member name="T:Laga.GeneticAlgorithm.RankingSort">
             <summary>

@@ -108,6 +108,13 @@ namespace Laga.GeneticAlgorithm
                 lowestFitnessChromosome = newChromosome;
         }
 
+        private void RecalculateFitnessStatistics()
+        {
+            totalFitness = chromosomes.Sum(c => c.Fitness);
+            highestFitnessChromosome = chromosomes.OrderByDescending(c => c.Fitness).FirstOrDefault();
+            lowestFitnessChromosome = chromosomes.OrderBy(c => c.Fitness).FirstOrDefault();
+        }
+
         /// <summary>
         /// Delete a chromosome from the population
         /// </summary>
@@ -156,41 +163,90 @@ namespace Laga.GeneticAlgorithm
             return chromosomes.GetEnumerator();
         }
 
-        //Natural Selection part
-
+        #region Natural Selection part
         /// <summary>
         /// Select a chromosome using the specified selection method.
         /// </summary>
-        /// <param name="selectionType">The type of selection to perform ("roulette" or "tournament").</param>
-        /// <returns>The selected chromosome.</returns>
-        public Chromosome<T> SelectChromosome(string selectionType = "roulette")
+        /// <param name="method">The type of selection to perform ("roulette" or "tournament").</param>
+        /// <param name="invert">invert the fitness for roulettewheel method</param>
+        /// <param name="tournamentSize"></param>
+        /// <param name="elitism"></param>
+        /// <param name="elitCount"></param>
+        public void Selection(string method, bool invert = false, int tournamentSize = 3, bool elitism = false,  int elitCount = 1)
         {
-            switch (selectionType.ToLower())
+            List<Chromosome<T>> newChromosomes = new List<Chromosome<T>>();
+            PrecomputedFitness pf = PrecomputedFitnessValues(invert);
+
+            //step 1: retain elite chromosomes
+            if (elitism)
             {
-                case "roulette":
-                    return RouletteWheelSelection();
-                case "tournament":
-                    return TournamentSelection();
-                default:
-                    throw new InvalidOperationException("Selection method not supported.");
+                Sort(ascending: false);
+                for(int i = 0;i < elitCount && i < chromosomes.Count;i++)
+                    newChromosomes.Add(chromosomes[i]);
             }
+
+            //step 2: Fill the remaining slots using the selected method
+            while (newChromosomes.Count < this.Count)
+            {
+                Chromosome<T> selected;
+                switch (method.ToLower())
+                {
+                    case "roulette":
+                        selected = RouletteWheelSelection(pf);
+                        break;
+                    case "tournament":
+                        selected = TournamentSelection(tournamentSize);
+                        break;
+                    default:
+                        throw new InvalidOperationException($"Selection method '{method}' not supported.");
+                }
+                newChromosomes.Add(selected);
+            }
+
+            //step 3: replace population
+            chromosomes.Clear();
+            chromosomes.AddRange(newChromosomes);
+        }
+
+        private struct PrecomputedFitness
+        {
+            public List<double> FitnessValues{ get; }
+            public double TotalFitness { get; }
+            public PrecomputedFitness(List<double> fitnessValues, double totalFitness)
+            {
+                FitnessValues = fitnessValues;
+                TotalFitness = totalFitness;
+            }
+        }
+
+        private PrecomputedFitness PrecomputedFitnessValues(bool invert)
+        {
+            double totalFitness = invert
+        ? chromosomes.Sum(c => 1.0 / c.Fitness)
+        : chromosomes.Sum(c => c.Fitness);
+
+            List<double> fitnessValues = chromosomes
+                .Select(c => invert ? 1.0 / c.Fitness : c.Fitness)
+                .ToList();
+
+            return new PrecomputedFitness(fitnessValues, totalFitness);
         }
 
         /// <summary>
         /// Roulette Wheel Selection: Selects a chromosome based on relative fitness.
         /// </summary>
         /// <returns>A chromosome selected by roulette wheel.</returns>
-        private Chromosome<T> RouletteWheelSelection()
+        private Chromosome<T> RouletteWheelSelection(PrecomputedFitness fitnessData)
         {
-            double totalFitness = SumFitness();  // Get total fitness of the population
-            double randomValue = new Random().NextDouble() * totalFitness;  // Random value between 0 and total fitness
+            // Get total fitness of the population
+            double randomValue = Numbers.Rand.NextDouble() * fitnessData.TotalFitness; // new Random().NextDouble() * totalFitness; // Random value between 0 and total fitness
 
             double cumulativeFitness = 0;
-            foreach (var chromosome in chromosomes)
+            for(int i = 0; i< chromosomes.Count; i++)
             {
-                cumulativeFitness += chromosome.Fitness;
+                cumulativeFitness += fitnessData.FitnessValues[i];
                 if (cumulativeFitness >= randomValue)
-                    return chromosome;
+                    return chromosomes[i];
             }
 
             // Fallback: Return the last chromosome if something goes wrong (should not happen in theory)
@@ -218,6 +274,78 @@ namespace Laga.GeneticAlgorithm
             return tournamentChromosomes.OrderByDescending(c => c.Fitness).First();
         }
 
+        #endregion
 
+        #region Crossover
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="method"></param>
+        /// <param name="rate"></param>
+        /// <exception cref="InvalidOperationException"></exception>
+        public void Crossover(string method, double rate)
+        {
+            List<Chromosome<T>> newChromosome = new List<Chromosome<T>>();
+
+            for (int i = 0; i < chromosomes.Count; i += 2)
+            {
+                //select two parents
+                Chromosome<T> parent1 = chromosomes[i];
+                Chromosome<T> parent2 = chromosomes[(i + 1) % chromosomes.Count];
+
+                if (Numbers.Rand.NextDouble() < rate)
+                {
+                    Tuple<Chromosome<T>, Chromosome<T>> offspring;
+                    switch (method.ToLower())
+                    {
+                        case "onepointcrossover":
+                            offspring = OnePointCrossover(parent1, parent2);
+                            break;
+                        case "twopointcrossover":
+                            offspring = TwoPointCrossover(parent1, parent2);
+                            break;
+                        default:
+                            throw new InvalidOperationException($"Crossover method '{method}' not supported.");
+                    }
+
+                    newChromosome.Add(offspring.Item1);
+                    newChromosome.Add(offspring.Item2);
+                }
+                else
+                {
+                    // No crossover, retain parents
+                    newChromosome.Add(parent1);
+                    newChromosome.Add(parent2);
+                }
+            }
+            chromosomes.Clear();
+            chromosomes.AddRange(newChromosome.Take(popSize));
+        }
+        
+        private Tuple<Chromosome<T>, Chromosome<T>> OnePointCrossover(Chromosome<T> parent1, Chromosome<T> parent2)
+        {
+            Random rand = new Random();
+            int crossoverPoint = rand.Next(parent1.Count);
+
+            var child1Genes = parent1.GetGenes(0, crossoverPoint).Concat(parent2.GetGenes(crossoverPoint + 1, parent2.Count - 1));
+            var child2Genes = parent2.GetGenes(0, crossoverPoint).Concat(parent1.GetGenes(crossoverPoint + 1, parent1.Count - 1));
+
+            return new Tuple<Chromosome<T>, Chromosome<T>>(
+                new Chromosome<T>(child1Genes),
+                new Chromosome<T>(child2Genes)
+            );
+        }
+        private Tuple<Chromosome<T>, Chromosome<T>> TwoPointCrossover(Chromosome<T> parent1, Chromosome<T> parent2)
+        {
+            return new Tuple<Chromosome<T>, Chromosome<T>>(
+                new Chromosome<T>(),
+                new Chromosome<T>()
+            );
+        }
+        #endregion
+
+        #region Mutation
+
+        #endregion
     }
 }

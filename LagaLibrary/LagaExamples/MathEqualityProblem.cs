@@ -19,23 +19,25 @@ namespace LagaExamples
             Console.WriteLine("Chromosome size: 15");
             
             Population<int> population = new Population<int>();
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 10; i++)
                 population.Add(new Chromosome<int>(FitnessFunc, GenrGenes.Binary_Integer(15).ToList()));
 
             int c = 0;
 
-            population.Sort(false);
+            //population.Sort(false);
             Console.WriteLine("iter (" + c + "): " + message);
 
             //natural selection
-            Chromosome<int> chrs = population.SelectChromosome("roulette");
+            population.Selection("roulette", invert : true, elitism : true);
 
             //crossover
-
+            population.Crossover("onePointCrossover", 0.2);
+            
             //mutation
 
             //replacement
-            
+            //population.Mutation("Binary", PopulationMutationRate = 0.01, ChromosomePopulationRate = 0.001);
+
             //do
             //{
 
