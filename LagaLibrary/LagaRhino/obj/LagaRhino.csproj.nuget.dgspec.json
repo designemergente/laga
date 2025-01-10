@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj": {}
+    "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj": {
-      "version": "2025.1.9",
+    "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj": {
+      "version": "2025.1.10",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
         "projectName": "LagaRhino",
-        "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
-        "packagesPath": "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
+        "projectPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+        "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-                "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+              "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+                "projectPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
               }
             }
           }
@@ -71,20 +71,20 @@
         }
       }
     },
-    "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-      "version": "2025.1.9",
+    "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+      "version": "2025.1.10",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
         "projectName": "Laga",
-        "projectPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
-        "packagesPath": "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\obj\\",
+        "projectPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Carlos.delabarrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

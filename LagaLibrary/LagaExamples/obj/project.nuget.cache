@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ASdppGsJtqo=",
+  "dgSpecHash": "jADkNyrqsVw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
+  "projectFilePath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\carlos.delabarrera\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+    "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
