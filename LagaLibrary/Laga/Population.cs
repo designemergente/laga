@@ -111,8 +111,10 @@ namespace Laga.GeneticAlgorithm
         private void RecalculateFitnessStatistics()
         {
             totalFitness = chromosomes.Sum(c => c.Fitness);
-            highestFitnessChromosome = chromosomes.OrderByDescending(c => c.Fitness).FirstOrDefault();
-            lowestFitnessChromosome = chromosomes.OrderBy(c => c.Fitness).FirstOrDefault();
+            GetHighestFitnessChromosome();
+            GetLowestFitnessChromosome();
+            //highestFitnessChromosome = chromosomes.OrderByDescending(c => c.Fitness).FirstOrDefault();
+            //lowestFitnessChromosome = chromosomes.OrderBy(c => c.Fitness).FirstOrDefault();
         }
 
         /// <summary>
@@ -206,6 +208,8 @@ namespace Laga.GeneticAlgorithm
             //step 3: replace population
             chromosomes.Clear();
             chromosomes.AddRange(newChromosomes);
+            //UpdateFitnessStatistics(newChromosomes);
+            RecalculateFitnessStatistics();
         }
 
         private struct PrecomputedFitness
