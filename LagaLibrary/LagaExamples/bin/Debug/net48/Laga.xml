@@ -418,13 +418,18 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.GetHighestFitnessChromosome">
+        <member name="P:Laga.GeneticAlgorithm.Population`1.Count">
+            <summary>
+            Population count
+            </summary>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.HighestFitnessChromosome">
             <summary>
             Return the higher chromosome in the population
             </summary>
             <returns><![CDATA[Chromosome<T>]]></returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.GetLowestFitnessChromosome">
+        <member name="M:Laga.GeneticAlgorithm.Population`1.LowestFitnessChromosome">
             <summary>
             Return the lower chromosome in the population
             </summary>
@@ -459,17 +464,18 @@
             </summary>
             <param name="ascending">If true, sorts in ascending order; otherwise, descending order.</param>
         </member>
-        <member name="P:Laga.GeneticAlgorithm.Population`1.Count">
-            <summary>
-            Population count
-            </summary>
-        </member>
         <member name="M:Laga.GeneticAlgorithm.Population`1.Add(Laga.GeneticAlgorithm.Chromosome{`0})">
             <summary>
             Add a chromosome to the population
             </summary>
             <typeparamref name="T">The type for Chr</typeparamref>
             <param name="chromosome"></param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.AddRange(System.Collections.Generic.IEnumerable{Laga.GeneticAlgorithm.Chromosome{`0}})">
+            <summary>
+            Add a range of chromosomes to the population.
+            </summary>
+            <param name="range"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.Population`1.Delete(System.Int32)">
             <summary>

@@ -20,32 +20,33 @@ namespace Laga.GeneticAlgorithm
         private double totalFitness;
 
         /// <summary>
+        /// Population count
+        /// </summary>
+        public int Count => chromosomes.Count;
+        /// <summary>
         /// Return the higher chromosome in the population
         /// </summary>
         /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> GetHighestFitnessChromosome() => highestFitnessChromosome;
-
+        public Chromosome<T> HighestFitnessChromosome() => highestFitnessChromosome;
         /// <summary>
         /// Return the lower chromosome in the population
         /// </summary>
         /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> GetLowestFitnessChromosome() => lowestFitnessChromosome;
-
+        public Chromosome<T> LowestFitnessChromosome() => lowestFitnessChromosome;
         /// <summary>
         /// Calculates the sum of all fitness values in the population.
         /// </summary>
         /// <returns>The sum of fitness values of all chromosomes.</returns>
-        public double SumFitness()
-        {
-            return chromosomes.Sum(Chromosome => Chromosome.Fitness);
-        }
-
+        
+        public double SumFitness() => totalFitness;
+        
         /// <summary>
         /// return the average fitness in the population
         /// </summary>
         /// <returns>double</returns>
         public double GetAverageFitness() => totalFitness / chromosomes.Count;
 
+        #region Constructors
         /// <summary>
         /// Construct a predifined size population 
         /// </summary>
@@ -55,7 +56,6 @@ namespace Laga.GeneticAlgorithm
             this.popSize = SizePopulation;
             chromosomes = new List<Chromosome<T>>(SizePopulation);
         }
-
         /// <summary>
         /// Construct a population with no size
         /// </summary>
@@ -63,7 +63,9 @@ namespace Laga.GeneticAlgorithm
         {
             chromosomes = new List<Chromosome<T>>();
         }
+        #endregion
 
+        #region Add, Sort and delete methods
         /// <summary>
         /// Sorts the chromosomes in the population by fitness.
         /// </summary>
@@ -71,18 +73,10 @@ namespace Laga.GeneticAlgorithm
         public void Sort(bool ascending = true)
         {
             if (ascending) 
-            {
                 chromosomes.Sort((a, b) => a.Fitness.CompareTo(b.Fitness));
-            }
             else
-            {
-                chromosomes.Sort((a, b) => a.Fitness.CompareTo(b.Fitness));
-            }
+                chromosomes.Sort((a, b) => b.Fitness.CompareTo(a.Fitness));
         }
-        /// <summary>
-        /// Population count
-        /// </summary>
-        public int Count => chromosomes.Count;
 
         /// <summary>
         /// Add a chromosome to the population
@@ -94,10 +88,38 @@ namespace Laga.GeneticAlgorithm
             if (popSize > 0 && chromosomes.Count >= popSize)
                 throw new InvalidOperationException("Population size limit reached");
 
+            chromosomes.Add(chromosome);
             UpdateFitnessStatistics(chromosome);
 
-            chromosomes.Add(chromosome);
         }
+
+        /// <summary>
+        /// Add a range of chromosomes to the population.
+        /// </summary>
+        /// <param name="range"></param>
+        
+        public void AddRange(IEnumerable<Chromosome<T>> range)
+        {
+            foreach (Chromosome<T> chromosome in range) 
+            {
+                if (chromosomes.Count >= popSize)
+                    throw new InvalidOperationException("Population size limited reached"); 
+                
+                chromosomes.Add(chromosome); 
+            }
+            RecalculateFitnessStatistics();
+        }
+        /// <summary>
+        /// Delete a chromosome from the population
+        /// </summary>
+        /// <param name="index"></param>
+       
+        public void Delete(int index)
+        {
+            chromosomes.RemoveAt(index);
+            RecalculateFitnessStatistics();
+        }
+        #endregion
 
         private void UpdateFitnessStatistics(Chromosome<T> newChromosome)
         {
@@ -115,13 +137,13 @@ namespace Laga.GeneticAlgorithm
             lowestFitnessChromosome = chromosomes.OrderBy(c => c.Fitness).FirstOrDefault();
         }
 
-        /// <summary>
-        /// Delete a chromosome from the population
-        /// </summary>
-        /// <param name="index"></param>
-        public void Delete(int index)
+        public void Evaluation(Func<Chromosome<T>, double> fitnessFunction)
         {
-            chromosomes.RemoveAt(index);
+            foreach (var chromosome in chromosomes)
+            {
+                chromosome.Fitness = fitnessFunction(chromosome);
+            }
+            RecalculateFitnessStatistics();
         }
 
         /// <summary>
@@ -129,10 +151,8 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="index"></param>
         /// <returns><![CDATA[Chromosome<T>]]></returns>
-        public Chromosome<T> GetChromosome(int index)
-        {
-            return chromosomes[index];
-        }
+        public Chromosome<T> GetChromosome(int index) => chromosomes[index];
+
 
         /// <summary>
         /// Print a population
@@ -149,19 +169,12 @@ namespace Laga.GeneticAlgorithm
             return sb.ToString();
         }
 
-        IEnumerator<Chromosome<T>> IEnumerable<Chromosome<T>>.GetEnumerator()
-        {
-            return chromosomes.GetEnumerator();
-        }
-
+        IEnumerator<Chromosome<T>> IEnumerable<Chromosome<T>>.GetEnumerator() => chromosomes.GetEnumerator();
         /// <summary>
         /// IEnumerator
         /// </summary>
         /// <returns></returns>
-        public IEnumerator GetEnumerator()
-        {
-            return chromosomes.GetEnumerator();
-        }
+        public IEnumerator GetEnumerator() => chromosomes.GetEnumerator();
 
         #region Natural Selection part
         /// <summary>
@@ -298,21 +311,21 @@ namespace Laga.GeneticAlgorithm
 
                 if (Numbers.Rand.NextDouble() < rate)
                 {
-                    Tuple<Chromosome<T>, Chromosome<T>> offspring;
+                    Chromosome<T> child1, child2;
                     switch (method.ToLower())
                     {
                         case "onepointcrossover":
-                            offspring = parent1.OnePointCrossover(parent2);
+                            (child1, child2) = parent1.OnePointCrossover(parent2);
                             break;
                         case "twopointcrossover":
-                            offspring = parent1.TwoPointCrossover(parent2);
+                            (child1, child2) = parent1.TwoPointCrossover(parent2);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");
                     }
 
-                    newChromosome.Add(offspring.Item1);
-                    newChromosome.Add(offspring.Item2);
+                    newChromosome.Add(child1);
+                    newChromosome.Add(child2);
                 }
                 else
                 {
@@ -340,19 +353,19 @@ namespace Laga.GeneticAlgorithm
 
             for (int i = 0; i < chromosomes.Count; i++)
             {
+                Chromosome<T> mutatedChromosome = chromosomes[i];
                 if (Numbers.Rand.NextDouble() < populationRate)
                 {
-                    Chromosome<T> mutatedChromosome = chromosomes[i];
                     switch (method.ToLower())
                     {
                         case "binary": //only for binary chromosomes...
-                            mutatedChromosome.BinaryMutation(chromosomeRate);
+                            mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.BinaryMutation(chromosomeRate);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");
                     }
-                    newChromosome.Add(mutatedChromosome);
                 }
+                newChromosome.Add(mutatedChromosome);
             }
             chromosomes.Clear();
             chromosomes.AddRange(newChromosome);

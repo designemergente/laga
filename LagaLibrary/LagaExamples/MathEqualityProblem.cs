@@ -24,26 +24,17 @@ namespace LagaExamples
 
             int c = 0;
 
-            //population.Sort(false);
-            Console.WriteLine("iter (" + c + "): " + message);
+            do
+            {
+                Console.WriteLine("iter (" + c + "): " + message);
 
-            //natural selection
-            population.Selection("roulette", invert : true, elitism : true, eliteCount: 2);
+                population.Selection("roulette", invert: true, elitism: true, eliteCount: 2); //natural selection
+                population.Crossover("onePointCrossover", 0.50); //crossover
+                population.Mutation("binary", populationRate: 0.2, chromosomeRate: 0.5);//mutation
+                population.Evaluation(FitnessFunc);
+                c++;
+            } while(population.LowestFitnessChromosome().Fitness == 0.00);
 
-            //crossover
-            population.Crossover("onePointCrossover", 0.70);
-
-            //mutation
-            population.Mutation("binary");
-
-            //replacement
-            //population.Mutation("Binary", PopulationMutationRate = 0.01, ChromosomePopulationRate = 0.001);
-
-            //do
-            //{
-
-
-            //} while (population.GetLowestFitnessChromosome().Fitness == 0);
         }
 
         //calculate the fitness.

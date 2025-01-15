@@ -30,7 +30,7 @@ namespace Laga.GeneticAlgorithm
         {
             Population<T> matingPool = new Population<T>(population.Count);
             
-            double totalFitness = normalizeFitness ? population.SumFitness() : population.GetHighestFitnessChromosome().Fitness;
+            double totalFitness = normalizeFitness ? population.SumFitness() : population.HighestFitnessChromosome().Fitness;
             double selectionProbability;
             int numberOfCopies;
 

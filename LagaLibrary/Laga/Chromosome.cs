@@ -174,17 +174,17 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="parent">The other parent chromosome</param>
         /// <returns>Tuple containing two new Chromosome offspring</returns>
-        public Tuple<Chromosome<T>, Chromosome<T>> OnePointCrossover(Chromosome<T> parent)
+        public (Chromosome<T> child1, Chromosome<T> child2) OnePointCrossover(Chromosome<T> parent)
         {
-            int crossoverPoint = Rand.NextInt(0, parent.Count);
+            int crossoverPoint = Rand.NextInt(1, parent.Count - 1);
 
-            var child1Genes = this.GetGenes(0, crossoverPoint).Concat(parent.GetGenes(crossoverPoint + 1, parent.Count - 1));
-            var child2Genes = parent.GetGenes(0, crossoverPoint).Concat(this.GetGenes(crossoverPoint + 1, parent.Count - 1));
+            var child1Genes = this.GetGenes(0, crossoverPoint).ToList();
+            child1Genes.AddRange(parent.GetGenes(crossoverPoint + 1, parent.Count - 1));
 
-            return new Tuple<Chromosome<T>, Chromosome<T>>(
-                new Chromosome<T>(child1Genes),
-                new Chromosome<T>(child2Genes)
-            );
+            var child2Genes = parent.GetGenes(0, crossoverPoint).ToList();
+            child2Genes.AddRange(this.GetGenes(crossoverPoint + 1, parent.Count - 1));
+
+            return (new Chromosome<T>(child1Genes), new Chromosome<T>(child2Genes));
         }
 
         /// <summary>
@@ -192,12 +192,9 @@ namespace Laga.GeneticAlgorithm
         /// </summary>
         /// <param name="parent"></param>
         /// <returns></returns>
-        public Tuple<Chromosome<T>, Chromosome<T>> TwoPointCrossover(Chromosome<T> parent)
+        public (Chromosome<T>, Chromosome<T>) TwoPointCrossover(Chromosome<T> parent)
         {
-            return new Tuple<Chromosome<T>, Chromosome<T>>(
-                new Chromosome<T>(),
-                new Chromosome<T>()
-            );
+            return (new Chromosome<T>(), new Chromosome<T>());
         }
         #endregion
 
@@ -230,6 +227,8 @@ namespace Laga.GeneticAlgorithm
             {
                 if (Rand.NextDouble() < rate)
                     chr.Add(Convert.ToInt16(genes[i].Equals(1) ? (T)(object)0 : (T)(object)1));
+                else
+                    chr.Add(Convert.ToInt16(genes[i]));
             }
 
             return chr;

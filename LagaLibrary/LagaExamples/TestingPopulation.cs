@@ -26,7 +26,7 @@ namespace LagaExamples
             double average = pop.GetAverageFitness();
             Console.WriteLine("The average fitness in the population is: " + average + "\n");
 
-            Chromosome<char> chr = pop.GetHighestFitnessChromosome();
+            Chromosome<char> chr = pop.HighestFitnessChromosome();
             Console.WriteLine("The highest fitness chromosome is: \n" + chr + "\n");
 
             Population<double> dblPop = new Population<double>(5);
