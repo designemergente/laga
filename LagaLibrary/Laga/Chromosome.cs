@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Laga.Numbers;
 
 namespace Laga.GeneticAlgorithm
@@ -159,6 +158,84 @@ namespace Laga.GeneticAlgorithm
         }
 
         /// <summary>
+        /// Chromosome to String
+        /// </summary>
+        /// <returns>string</returns>
+        public override string ToString()
+        {
+            string geneString = string.Join(", ", genes);
+            string fitnessString = cachedFitness.HasValue ? cachedFitness.Value.ToString() : "No fitness";
+            return $"Genes: {geneString} | Fitness: {fitnessString}";
+        }
+
+        #region Crossover
+        /// <summary>
+        /// Perform a crossover with another chromosome using a specified function.
+        /// </summary>
+        /// <param name="parent">The other parent chromosome</param>
+        /// <returns>Tuple containing two new Chromosome offspring</returns>
+        public Tuple<Chromosome<T>, Chromosome<T>> OnePointCrossover(Chromosome<T> parent)
+        {
+            int crossoverPoint = Rand.NextInt(0, parent.Count);
+
+            var child1Genes = this.GetGenes(0, crossoverPoint).Concat(parent.GetGenes(crossoverPoint + 1, parent.Count - 1));
+            var child2Genes = parent.GetGenes(0, crossoverPoint).Concat(this.GetGenes(crossoverPoint + 1, parent.Count - 1));
+
+            return new Tuple<Chromosome<T>, Chromosome<T>>(
+                new Chromosome<T>(child1Genes),
+                new Chromosome<T>(child2Genes)
+            );
+        }
+
+        /// <summary>
+        /// Not implemented yet.
+        /// </summary>
+        /// <param name="parent"></param>
+        /// <returns></returns>
+        public Tuple<Chromosome<T>, Chromosome<T>> TwoPointCrossover(Chromosome<T> parent)
+        {
+            return new Tuple<Chromosome<T>, Chromosome<T>>(
+                new Chromosome<T>(),
+                new Chromosome<T>()
+            );
+        }
+        #endregion
+
+        #region Mutation
+        /// <summary>
+        /// Mutate the chromosome
+        /// </summary>
+        /// <param name="mutationRate">The percentage possibility to occur the mutation</param>
+        /// <param name="MutationFunction">The Mutation function</param>
+        public void Mutate(double mutationRate, Func<int, T> MutationFunction)
+        {
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (Rand.NextDouble() < mutationRate)
+                {
+                        genes[i] = MutationFunction(i);
+                        cachedFitness = null;
+                } 
+            }
+        }
+
+        /// <summary>
+        /// Mutate the chromosome
+        /// </summary>
+        /// <param name="rate">The percentage possibility to occur the mutation</param>
+        public Chromosome<int> BinaryMutation(double rate)
+        {
+            Chromosome<int> chr = new Chromosome<int>();
+            for (int i = 0; i < genes.Count; i++)
+            {
+                if (Rand.NextDouble() < rate)
+                    chr.Add(Convert.ToInt16(genes[i].Equals(1) ? (T)(object)0 : (T)(object)1));
+            }
+
+            return chr;
+        }
+
+        /// <summary>
         /// Perform Fisher-Yates shuffle on the genes.
         /// </summary>
         public void Shuffle()
@@ -176,43 +253,6 @@ namespace Laga.GeneticAlgorithm
             }
         }
 
-        /// <summary>
-        /// Chromosome to String
-        /// </summary>
-        /// <returns>string</returns>
-        public override string ToString()
-        {
-            string geneString = string.Join(", ", genes);
-            string fitnessString = cachedFitness.HasValue ? cachedFitness.Value.ToString() : "No fitness";
-            return $"Genes: {geneString} | Fitness: {fitnessString}";
-        }
-
-        /// <summary>
-        /// Perform a crossover with another chromosome using a specified function.
-        /// </summary>
-        /// <param name="partner">The other parent chromosome</param>
-        /// <param name="CrossoverFunction">The crossover function to use</param>
-        /// <returns>Tuple containing two new Chromosome offspring</returns>
-        public (Chromosome<T>, Chromosome<T>) Crossover(Chromosome<T> partner, Func<Chromosome<T>, Chromosome<T>, (Chromosome<T>, Chromosome<T>)> CrossoverFunction)
-        {
-            return CrossoverFunction(this, partner);
-        }
-
-        /// <summary>
-        /// Mutate the chromosome
-        /// </summary>
-        /// <param name="mutationRate">The percentage possibility to occur the mutation</param>
-        /// <param name="MutationFunction">The Mutation function</param>
-        public void Mutate(double mutationRate, Func<int, T> MutationFunction)
-        {
-            for (int i = 0; i < this.Count; i++)
-            {
-                if (Rand.NextDouble() < mutationRate)
-                {
-                        genes[i] = MutationFunction(i);
-                        cachedFitness = null;
-                } 
-            }
-        }
+        #endregion
     }
 }

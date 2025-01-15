@@ -89,24 +89,25 @@
             </summary>
             <returns>Array</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Shuffle">
-            <summary>
-            Perform Fisher-Yates shuffle on the genes.
-            </summary>
-        </member>
         <member name="M:Laga.GeneticAlgorithm.Chromosome`1.ToString">
             <summary>
             Chromosome to String
             </summary>
             <returns>string</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Crossover(Laga.GeneticAlgorithm.Chromosome{`0},System.Func{Laga.GeneticAlgorithm.Chromosome{`0},Laga.GeneticAlgorithm.Chromosome{`0},System.ValueTuple{Laga.GeneticAlgorithm.Chromosome{`0},Laga.GeneticAlgorithm.Chromosome{`0}}})">
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.OnePointCrossover(Laga.GeneticAlgorithm.Chromosome{`0})">
             <summary>
             Perform a crossover with another chromosome using a specified function.
             </summary>
-            <param name="partner">The other parent chromosome</param>
-            <param name="CrossoverFunction">The crossover function to use</param>
+            <param name="parent">The other parent chromosome</param>
             <returns>Tuple containing two new Chromosome offspring</returns>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.TwoPointCrossover(Laga.GeneticAlgorithm.Chromosome{`0})">
+            <summary>
+            Not implemented yet.
+            </summary>
+            <param name="parent"></param>
+            <returns></returns>
         </member>
         <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Mutate(System.Double,System.Func{System.Int32,`0})">
             <summary>
@@ -114,6 +115,17 @@
             </summary>
             <param name="mutationRate">The percentage possibility to occur the mutation</param>
             <param name="MutationFunction">The Mutation function</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.BinaryMutation(System.Double)">
+            <summary>
+            Mutate the chromosome
+            </summary>
+            <param name="rate">The percentage possibility to occur the mutation</param>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Shuffle">
+            <summary>
+            Perform Fisher-Yates shuffle on the genes.
+            </summary>
         </member>
         <member name="T:Laga.GeneticAlgorithm.Crossover`1">
             <summary>
@@ -492,7 +504,7 @@
             <param name="invert">invert the fitness for roulettewheel method</param>
             <param name="tournamentSize"></param>
             <param name="elitism"></param>
-            <param name="elitCount"></param>
+            <param name="eliteCount"></param>
         </member>
         <member name="M:Laga.GeneticAlgorithm.Population`1.RouletteWheelSelection(Laga.GeneticAlgorithm.Population{`0}.PrecomputedFitness)">
             <summary>
@@ -514,6 +526,14 @@
             <param name="method"></param>
             <param name="rate"></param>
             <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="method"></param>
+            <param name="populationRate"></param>
+            <param name="chromosomeRate"></param>
         </member>
         <member name="T:Laga.GeneticAlgorithm.RankingSort">
             <summary>

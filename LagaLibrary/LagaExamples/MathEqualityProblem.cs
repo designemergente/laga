@@ -28,12 +28,13 @@ namespace LagaExamples
             Console.WriteLine("iter (" + c + "): " + message);
 
             //natural selection
-            population.Selection("roulette", invert : true, elitism : true);
+            population.Selection("roulette", invert : true, elitism : true, eliteCount: 2);
 
             //crossover
-            population.Crossover("onePointCrossover", 0.2);
-            
+            population.Crossover("onePointCrossover", 0.70);
+
             //mutation
+            population.Mutation("binary");
 
             //replacement
             //population.Mutation("Binary", PopulationMutationRate = 0.01, ChromosomePopulationRate = 0.001);
