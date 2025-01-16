@@ -11,16 +11,3 @@ C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaR
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.csproj.Up2Date
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.dll
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\LagaRhino.dll
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\LagaRhino.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\LagaRhino.xml
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\Laga.dll
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\Laga.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\bin\Debug\net48\Laga.xml
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.csproj.AssemblyReference.cache
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.csproj.CoreCompileInputs.cache
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.sourcelink.json
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.csproj.Up2Date
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.dll
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaRhino\obj\Debug\net48\LagaRhino.pdb

@@ -20,7 +20,8 @@ namespace Laga.IO
             {
                 //getting the current running instance of an excel application
                 excelApp = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
-                xlBook = excelApp.Workbooks.get_Item(wb);
+                //xlBook = excelApp.Workbooks.get_Item(wb);
+                xlBook = excelApp.get_Workbooks().get_Item(wb);
             }
             catch
             {

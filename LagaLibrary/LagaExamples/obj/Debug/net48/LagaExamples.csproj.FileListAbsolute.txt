@@ -13,24 +13,24 @@ C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\La
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExam.985508E5.Up2Date
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.exe
 C:\Users\delab\Documents\GitHub\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.exe.config
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.exe
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.dll
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.pdb
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.xml
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.AssemblyReference.cache
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfoInputs.cache
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfo.cs
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.CoreCompileInputs.cache
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.sourcelink.json
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExam.985508E5.Up2Date
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.exe
-C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.pdb
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.AssemblyReference.cache
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfoInputs.cache
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfo.cs
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.CoreCompileInputs.cache
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.sourcelink.json
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.exe.config
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.exe
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\LagaExamples.pdb
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.dll
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.pdb
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\bin\Debug\net48\Laga.xml
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.AssemblyReference.cache
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfoInputs.cache
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.AssemblyInfo.cs
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.csproj.CoreCompileInputs.cache
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.sourcelink.json
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExam.985508E5.Up2Date
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.exe
+C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\obj\Debug\net48\LagaExamples.pdb

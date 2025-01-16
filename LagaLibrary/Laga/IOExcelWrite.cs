@@ -127,7 +127,6 @@ namespace Laga.IO
         /// <param name="name">The sheet name name</param>
         public void IOWrite_NewExcelSheet(int pos, string name)
         {
-     
             //xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[pos], 1, Excel.XlSheetType.xlWorksheet);
             xlSheet = xlBook.get_Sheets().Add(Type.Missing, xlBook.get_Sheets()[pos], 1, Excel.XlSheetType.xlWorksheet);
             xlSheet.Name = name;
@@ -299,22 +298,29 @@ namespace Laga.IO
         public void IOWrite_OpenExcelApp(bool display, int sheetNum)
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
+            //xlBook = excelApp.Workbooks.Open(filePath);
+            xlBook = excelApp.get_Workbooks().Open(filePath);
             if (display)
             {
-                excelApp.Visible = display;
-                excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+                //excelApp.Visible = display;
+                excelApp.set_Visible(display);
+                
+                //excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+                excelApp.set_WindowState(Excel.XlWindowState.xlMaximized);
             }
-            int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            //int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            int c = excelApp.get_Worksheets().Count;
             sheetNum = c;
             if ((sheetNum > c) || (sheetNum < 1)) //means we need to creates a new excel sheet.
             {
-                xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[c], 1, Excel.XlSheetType.xlWorksheet);
+                //xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[c], 1, Excel.XlSheetType.xlWorksheet);
+                xlSheet = (Excel.Worksheet)xlBook.get_Sheets().Add(Type.Missing, xlBook.get_Worksheets()[c], 1, Excel.XlSheetType.xlWorksheet);
                 xlSheet.Name = "Gner8At_" + DateTime.Now.ToString("ss.fff");
             }
             else
             {
-                xlSheet = xlBook.Sheets[sheetNum];
+                //xlSheet = xlBook.Sheets[sheetNum];
+                xlSheet = xlBook.get_Sheets()[sheetNum];
             }
         }
         /// <summary>
@@ -324,29 +330,38 @@ namespace Laga.IO
         public void IOWrite_OpenExcelApp(bool display)
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
+            //xlBook = excelApp.Workbooks.Open(filePath);
+            xlBook = excelApp.get_Workbooks().Open(filePath);
             if (display)
             {
-                excelApp.Visible = display;
-                excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+                //excelApp.Visible = display;
+                //excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+                excelApp.set_Visible(display) ;
+                excelApp.set_WindowState(Excel.XlWindowState.xlMaximized);
             }
-            int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            //int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            int c = excelApp.get_Worksheets().Count;
             sheetNum = c;
             if ((sheetNum > c) || (sheetNum < 1)) //means we need to creates a new excel sheet.
             {
-                xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[c], 1, Excel.XlSheetType.xlWorksheet);
+                //xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[c], 1, Excel.XlSheetType.xlWorksheet);
+                xlSheet = (Excel.Worksheet)xlBook.get_Worksheets().Add(Type.Missing, xlBook.get_Worksheets()[c], 1, Excel.XlSheetType.xlWorksheet);
             }
             else
             {
-                xlSheet = xlBook.Sheets[sheetNum];
+                //xlSheet = xlBook.Sheets[sheetNum];
+                xlSheet = xlBook.get_Worksheets()[sheetNum];
             }
         }
         #endregion
         private void IOWrite_CreatesExcelApp(bool display)
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Add(misValue);
-            excelApp.Visible = display;
+            //xlBook = excelApp.Workbooks.Add(misValue);
+            //excelApp.Visible = display;
+
+            xlBook = excelApp.get_Workbooks().Add(misValue);
+            excelApp.set_Visible(display);
         }
         private bool IOWrite_CreatesExcelBook(string folderPath, string fileName, string sheetName, bool display)
         {
@@ -358,16 +373,17 @@ namespace Laga.IO
                 return false;
             }
 
-            xlBook = excelApp.Workbooks.Add();
-            xlSheet = (Excel.Worksheet)xlBook.Worksheets.Add();
+            //xlBook = excelApp.Workbooks.Add();
+            //xlSheet = (Excel.Worksheet)xlBook.Worksheets.Add();
+            xlBook = excelApp.get_Workbooks().Add();
+            xlSheet = (Excel.Worksheet)xlBook.get_Worksheets().Add();
             xlSheet.Name = sheetName;
-
             // You can add data to the worksheet here, e.g., worksheet.Cells[1, 1] = "Hello, World";
 
             this.filePath = Path.Combine(folderPath, fileName + ".xlsx");
             xlBook.SaveAs(filePath);
-            excelApp.Visible = display;
-
+            //excelApp.Visible = display;
+            excelApp.set_Visible(display);
             return true;
         }
         /// <summary>

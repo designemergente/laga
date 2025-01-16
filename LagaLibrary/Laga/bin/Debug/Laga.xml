@@ -421,6 +421,14 @@
             <param name="max"></param>
             <returns></returns>
         </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.CharMutation(System.Int32,System.Int32)">
+            <summary>
+            Mutate a char.
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
         <member name="T:Laga.GeneticAlgorithm.Population`1">
             <summary>
             Create and Manipulate Populations

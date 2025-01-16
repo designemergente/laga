@@ -103,7 +103,8 @@ namespace Laga.IO
                 string shapeAdress;
                 foreach (Excel.Shape shape in xlSheet.Shapes)
                 {
-                    shapeAdress = IOTextData.RemoveByCharacter((string)shape.TopLeftCell.Address, "$");
+                    //shapeAdress = IOTextData.RemoveByCharacter((string)shape.TopLeftCell.Address, "$");
+                    shapeAdress = IOTextData.RemoveByCharacter((string)shape.get_AlternativeText(),"$"); //not sure...
                     if (shapeAdress == cellAddress)
                     {
 
@@ -163,7 +164,8 @@ namespace Laga.IO
         /// <param name="display">decide to visualize the excel sheet.</param>
         public void IORead_SetActiveSheet(int pos, bool display)
         {
-            Excel.Sheets excelSheets = xlBook.Worksheets;
+            //Excel.Sheets excelSheets = xlBook.Worksheets;
+            Excel.Sheets excelSheets = xlBook.get_Worksheets();
             xlSheet = excelSheets.Item[pos];
             xlSheet.Activate();
             if (display)
@@ -177,9 +179,13 @@ namespace Laga.IO
         public List<string> IORead_ExcelWorksheetNames()
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
+            //xlBook = excelApp.Workbooks.Open(filePath);
+            xlBook = excelApp.get_Workbooks().Open(filePath);
+
             List<string> lstExcelNames = new List<string>();
-            foreach (Excel.Worksheet ws in xlBook.Worksheets)
+            //foreach (Excel.Worksheet ws in xlBook.Worksheets)
+            
+            foreach(Excel.Worksheet ws in xlBook.get_Worksheets())
             {
                 lstExcelNames.Add(ws.Name);
             }
@@ -192,8 +198,11 @@ namespace Laga.IO
         public void IORead_OpenExcelApp()
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
-            sheetNum = excelApp.Worksheets.Count;
+            //xlBook = excelApp.Workbooks.Open(filePath);
+            //sheetNum = excelApp.Worksheets.Count;
+
+            xlBook = excelApp.get_Workbooks().Open(filePath);
+            sheetNum = excelApp.get_Worksheets().Count;
         }
         /// <summary>
         /// Open excel app based on the constructor.
@@ -204,10 +213,15 @@ namespace Laga.IO
             IORead_OpenExcelApp();
             if (display)
             {
-                excelApp.Visible = display;
-                excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+                //excelApp.Visible = display;
+                //excelApp.WindowState = Excel.XlWindowState.xlMaximized;
+
+                excelApp.set_Visible(display);
+                excelApp.set_WindowState(Excel.XlWindowState.xlMaximized);
             }
-            int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            //int c = excelApp.Worksheets.Count; //check the sheetnumber...
+            int c = excelApp.get_Worksheets().Count;
+
             if ((sheetNum > c) || (sheetNum < 1)) //means there is no excel sheet to read.
             {
                 //System.Windows.Forms.MessageBox.Show("No excel Sheet found");
@@ -215,7 +229,8 @@ namespace Laga.IO
             }
             else
             {
-                xlSheet = xlBook.Sheets[sheetNum];
+                //xlSheet = xlBook.Sheets[sheetNum];
+                xlSheet = xlBook.get_Worksheets()[sheetNum];
             }
         }
         /// <summary>
