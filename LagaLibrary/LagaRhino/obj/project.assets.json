@@ -195,11 +195,11 @@
   "project": {
     "version": "2025.1.16",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "projectName": "LagaRhino",
-      "projectPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+      "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
       "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
+      "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -220,8 +220,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-              "projectPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+            "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+              "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
             }
           }
         }

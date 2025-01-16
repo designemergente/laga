@@ -91,7 +91,8 @@ namespace Laga.IO
             this.filePath = FilePath;
             if(IOExcel.TestExcelOpen(filePath, out xlBook))
             {
-                xlSheet = xlBook.ActiveSheet;
+                //xlSheet = xlBook.ActiveSheet;
+                xlSheet = xlBook.get_ActiveSheet();
             }
         }
 
@@ -127,7 +128,8 @@ namespace Laga.IO
         public void IOWrite_NewExcelSheet(int pos, string name)
         {
      
-            xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[pos], 1, Excel.XlSheetType.xlWorksheet);
+            //xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[pos], 1, Excel.XlSheetType.xlWorksheet);
+            xlSheet = xlBook.get_Sheets().Add(Type.Missing, xlBook.get_Sheets()[pos], 1, Excel.XlSheetType.xlWorksheet);
             xlSheet.Name = name;
         }
         /// <summary>
@@ -136,7 +138,8 @@ namespace Laga.IO
         /// <param name="pos">The position of the excel sheet in the document.</param>
         public void IOWrite_SetActiveSheet(int pos)
         {
-            Excel.Sheets excelSheets = xlBook.Worksheets;
+            //Excel.Sheets excelSheets = xlBook.Worksheets;
+            Excel.Sheets excelSheets = xlBook.get_Worksheets();
             xlSheet = excelSheets.Item[pos];
             xlSheet.Activate();
             xlSheet.Visible = Excel.XlSheetVisibility.xlSheetVisible;
@@ -283,8 +286,10 @@ namespace Laga.IO
         public void IOWrite_OpenExcelApp()
         {
             excelApp = new Excel.Application();
-            xlBook = excelApp.Workbooks.Open(filePath);
-            excelApp.Visible = true;
+            //xlBook = excelApp.Workbooks.Open(filePath);
+            xlBook = excelApp.get_Workbooks().Open(filePath);
+            //excelApp.Visible = true;
+            excelApp.set_Visible(true);
         }
         /// <summary>
         /// Open an Excel document based on the constructor.
