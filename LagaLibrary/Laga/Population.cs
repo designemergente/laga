@@ -154,7 +154,6 @@ namespace Laga.GeneticAlgorithm
         /// <returns><![CDATA[Chromosome<T>]]></returns>
         public Chromosome<T> GetChromosome(int index) => chromosomes[index];
 
-
         /// <summary>
         /// Print a population
         /// </summary>
@@ -348,7 +347,7 @@ namespace Laga.GeneticAlgorithm
         /// <param name="method"></param>
         /// <param name="populationRate"></param>
         /// <param name="chromosomeRate"></param>
-        public void Mutation(string method, double populationRate = 0.1, double chromosomeRate = 0.01, int iMin = 0, int iMax = 100)
+        public void Mutation(string method, double populationRate = 0.1, double chromosomeRate = 0.01, int iMin = 0, int iMax = 100, double dMin = 0, double dMax = 1)
         {
             List<Chromosome<T>> newChromosome = new List<Chromosome<T>>();
 
@@ -364,6 +363,9 @@ namespace Laga.GeneticAlgorithm
                             break;
                         case "charrandom": //only for binary chromosomes...
                             mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.CharRandom(chromosomeRate, iMin, iMax);
+                            break;
+                        case "dblrandom": //only for binary chromosomes...
+                            mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.dblRandom(chromosomeRate, dMin, dMax);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");

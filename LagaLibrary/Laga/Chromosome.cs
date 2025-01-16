@@ -258,6 +258,21 @@ namespace Laga.GeneticAlgorithm
             return chr;
         }
 
+        public Chromosome<double> dblRandom(double rate, double start, double end)
+        {
+            Chromosome<double> chr = new Chromosome<double>();
+            for (int i = 0; i < genes.Count; i++)
+            {
+                if (Rand.NextDouble() < rate)
+                {
+                    chr.Add(Mutation.DblMutation(start, end));
+                }
+                else
+                    chr.Add(Convert.ToDouble(genes[i]));
+            }
+            return chr;
+        }
+
         /// <summary>
         /// Perform Fisher-Yates shuffle on the genes.
         /// </summary>

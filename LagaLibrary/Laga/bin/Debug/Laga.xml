@@ -429,6 +429,14 @@
             <param name="max"></param>
             <returns></returns>
         </member>
+        <member name="M:Laga.GeneticAlgorithm.Mutation.DblMutation(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
         <member name="T:Laga.GeneticAlgorithm.Population`1">
             <summary>
             Create and Manipulate Populations
@@ -550,7 +558,7 @@
             <param name="rate"></param>
             <exception cref="T:System.InvalidOperationException"></exception>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32,System.Double,System.Double)">
             <summary>
             
             </summary>
@@ -1753,6 +1761,11 @@
             </summary>
             <param name="vector">First Vector</param>
             <returns>Vector</returns>
+        </member>
+        <member name="T:Laga.FunctionOptimization">
+            <summary>
+            FunctionOptimization
+            </summary>
         </member>
         <member name="T:Laga.IO.IOCSV">
             <summary>

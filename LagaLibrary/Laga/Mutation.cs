@@ -33,6 +33,18 @@ namespace Laga.GeneticAlgorithm
             return (char)(Rand.NextInt(min, max + 1));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static double DblMutation(double min, double max)
+        {
+            return Rand.NextDouble(min, max);
+        }
+
+        #region old code
         //old code
         /*
         private float popPercent;
@@ -413,5 +425,7 @@ namespace Laga.GeneticAlgorithm
             }
         }
         */
+        #endregion
+
     }
 }
