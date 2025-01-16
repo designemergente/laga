@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using Laga.Numbers;
 
@@ -231,6 +232,29 @@ namespace Laga.GeneticAlgorithm
                     chr.Add(Convert.ToInt16(genes[i]));
             }
 
+            return chr;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="rate"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public Chromosome<char> CharRandom(double rate, int start, int end)
+        {
+            Chromosome<char> chr = new Chromosome<char>();
+            for (int i = 0; i < genes.Count; i++)
+            {
+                if (Rand.NextDouble() < rate)
+                {
+                    //Func<int, char> func = Mutation.Mutate(start, end);
+                    chr.Add(Mutation.CharMutation(start, end));
+                }
+                else
+                    chr.Add(Convert.ToChar(genes[i]));
+            }
             return chr;
         }
 

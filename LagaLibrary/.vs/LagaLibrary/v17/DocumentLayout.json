@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\lagaexamples\\mathequalityproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\mathequalityproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\ioexcelwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\ioexcelwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\lagaexamples\\combinatorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\combinatorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\numbers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\genrgenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\genrgenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\rand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\lagaexamples\\mathequalityproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52A1EEE5-3E12-4C2E-95D1-7AB2A8DF1526}|LagaExamples\\LagaExamples.csproj|solutionrelative:lagaexamples\\mathequalityproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\onedrive - hok\\documents\\github\\laga\\lagalibrary\\laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 360,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,39 +70,142 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IOExcelWrite.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\IOExcelWrite.cs",
+              "RelativeDocumentMoniker": "Laga\\IOExcelWrite.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\IOExcelWrite.cs",
+              "RelativeToolTip": "Laga\\IOExcelWrite.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAA2wFIBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:35:55.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FunctionOptimization.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\FunctionOptimization.cs",
+              "RelativeDocumentMoniker": "Laga\\FunctionOptimization.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\FunctionOptimization.cs",
+              "RelativeToolTip": "Laga\\FunctionOptimization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:32:27.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rand.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Rand.cs",
+              "RelativeDocumentMoniker": "Laga\\Rand.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Rand.cs",
+              "RelativeToolTip": "Laga\\Rand.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:30:14.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenrGenes.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\GenrGenes.cs",
+              "RelativeDocumentMoniker": "Laga\\GenrGenes.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\GenrGenes.cs",
+              "RelativeToolTip": "Laga\\GenrGenes.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:29:56.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Numbers.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Numbers.cs",
+              "RelativeDocumentMoniker": "Laga\\Numbers.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Numbers.cs",
+              "RelativeToolTip": "Laga\\Numbers.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:02:51.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mutation.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Mutation.cs",
+              "RelativeDocumentMoniker": "Laga\\Mutation.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Mutation.cs",
+              "RelativeToolTip": "Laga\\Mutation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T11:44:14.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Combinatorial.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\Combinatorial.cs",
+              "RelativeDocumentMoniker": "LagaExamples\\Combinatorial.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\Combinatorial.cs",
+              "RelativeToolTip": "LagaExamples\\Combinatorial.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T11:12:33.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeDocumentMoniker": "Laga\\Tools.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeToolTip": "Laga\\Tools.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswHgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T10:45:50.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Chromosome.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
               "RelativeDocumentMoniker": "Laga\\Chromosome.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
               "RelativeToolTip": "Laga\\Chromosome.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAqwOAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAAPsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T11:08:01.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "MathEqualityProblem.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\MathEqualityProblem.cs",
               "RelativeDocumentMoniker": "LagaExamples\\MathEqualityProblem.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\MathEqualityProblem.cs",
               "RelativeToolTip": "LagaExamples\\MathEqualityProblem.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCsAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T10:24:56.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Population.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Population.cs",
               "RelativeDocumentMoniker": "Laga\\Population.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Population.cs",
               "RelativeToolTip": "Laga\\Population.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAcwIoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0BAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T17:10:42.839Z",
               "EditorCaption": ""
@@ -83,7 +218,7 @@
               "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\OneDrive - HOK\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
               "RelativeToolTip": "LagaExamples\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwDAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T09:51:54.317Z",
               "EditorCaption": ""

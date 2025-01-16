@@ -1,4 +1,5 @@
 ﻿using System;
+using Laga;
 
 namespace LagaExamples
 {
@@ -30,7 +31,9 @@ namespace LagaExamples
             Console.WriteLine("2. Chromosome Examples");
             Console.WriteLine("3. Math Functions");
             Console.WriteLine("4. Population Examples");
-            Console.WriteLine("5. Math Equality Problem");
+            Console.WriteLine("5. GA: Math Equality Problem");
+            Console.WriteLine("6. GA: Combinatorial Problem");
+            Console.WriteLine("7. GA: Function Optimization");
             Console.Write("Enter your choice: ");
 
             ConsoleKeyInfo myKey = Console.ReadKey(true);
@@ -50,6 +53,12 @@ namespace LagaExamples
                     break;
                 case '5':
                     MathEqualityProblem.Run();
+                    break;
+                case '6':
+                    Combinatorial.Run();
+                    break;
+                case '7':
+                    FunctionOptimization.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

@@ -122,6 +122,15 @@
             </summary>
             <param name="rate">The percentage possibility to occur the mutation</param>
         </member>
+        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.CharRandom(System.Double,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rate"></param>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
         <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Shuffle">
             <summary>
             Perform Fisher-Yates shuffle on the genes.
@@ -533,7 +542,7 @@
             <param name="rate"></param>
             <exception cref="T:System.InvalidOperationException"></exception>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double)">
+        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32)">
             <summary>
             
             </summary>

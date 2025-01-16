@@ -24,9 +24,6 @@ C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\Laga\obj\Debug\net
 C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.sourcelink.json
 C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.dll
 C:\Users\carlos.delabarrera\Documents\Github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.pdb
-C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.dll
-C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.pdb
-C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\bin\Debug\net48\Laga.xml
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.csproj.AssemblyReference.cache
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Interop.Microsoft.Office.Core.dll
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Interop.Microsoft.Office.Interop.Excel.dll
@@ -35,5 +32,3 @@ C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Lag
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.csproj.CoreCompileInputs.cache
 C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.sourcelink.json
-C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.dll
-C:\Users\Carlos.delabarrera\OneDrive - HOK\Documents\github\Laga\LagaLibrary\Laga\obj\Debug\net48\Laga.pdb

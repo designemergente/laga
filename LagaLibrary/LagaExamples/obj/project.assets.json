@@ -26,7 +26,7 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2025.1.14": {
+      "Laga/2025.1.16": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -131,7 +131,7 @@
         "version.txt"
       ]
     },
-    "Laga/2025.1.14": {
+    "Laga/2025.1.16": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -139,7 +139,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2025.1.14"
+      "Laga >= 2025.1.16"
     ]
   },
   "packageFolders": {
