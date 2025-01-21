@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = LagaExamples
-build_property.ProjectDir = C:\Users\Carlos.delabarrera\Documents\Github\Laga\LagaLibrary\LagaExamples\
+build_property.ProjectDir = C:\Users\Carlos.delabarrera\Documents\github\Laga\LagaLibrary\LagaExamples\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

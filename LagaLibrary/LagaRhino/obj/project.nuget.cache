@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iN5k/5hINa0=",
+  "dgSpecHash": "OJZLich/uqM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
+  "projectFilePath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaRhino\\LagaRhino.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
     "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\rhinocommon\\7.36.23346.16351\\rhinocommon.7.36.23346.16351.nupkg.sha512",
     "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
   ],

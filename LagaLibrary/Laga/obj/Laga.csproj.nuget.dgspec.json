@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {}
+    "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-      "version": "2025.1.16",
+    "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+      "version": "2025.1.21",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
         "projectName": "Laga",
-        "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
+        "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj",
         "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\obj\\",
+        "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1001, )"
             },
             "System.Data.DataSetExtensions": {
               "target": "Package",

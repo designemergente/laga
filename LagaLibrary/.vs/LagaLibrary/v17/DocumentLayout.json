@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\ioexcelread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\ioexcelread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\ioexcelwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\ioexcelwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\ioexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\ioexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\functionoptimization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,7 +58,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IOExcelWrite.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcelWrite.cs",
+              "RelativeDocumentMoniker": "Laga\\IOExcelWrite.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcelWrite.cs",
+              "RelativeToolTip": "Laga\\IOExcelWrite.cs",
+              "ViewState": "AgIAADUBAAAAAAAAAAAiwD8BAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:05:57.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IOExcelRead.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcelRead.cs",
+              "RelativeDocumentMoniker": "Laga\\IOExcelRead.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcelRead.cs",
+              "RelativeToolTip": "Laga\\IOExcelRead.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAIwAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T09:21:26.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "IOExcel.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcel.cs",
+              "RelativeDocumentMoniker": "Laga\\IOExcel.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\IOExcel.cs",
+              "RelativeToolTip": "Laga\\IOExcel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:20:02.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Mutation.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Mutation.cs",
               "RelativeDocumentMoniker": "Laga\\Mutation.cs",
@@ -59,20 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FunctionOptimization.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\FunctionOptimization.cs",
               "RelativeDocumentMoniker": "Laga\\FunctionOptimization.cs",
-              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\FunctionOptimization.cs*",
-              "RelativeToolTip": "Laga\\FunctionOptimization.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAewBYAAAAaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\FunctionOptimization.cs",
+              "RelativeToolTip": "Laga\\FunctionOptimization.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAjwC0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T14:32:27.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Combinatorial.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Combinatorial.cs",
               "RelativeDocumentMoniker": "LagaExamples\\Combinatorial.cs",
@@ -85,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Tools.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
               "RelativeDocumentMoniker": "Laga\\Tools.cs",
@@ -93,11 +144,12 @@
               "RelativeToolTip": "Laga\\Tools.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAswHgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T10:45:50.418Z"
+              "WhenOpened": "2025-01-16T10:45:50.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Chromosome.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
               "RelativeDocumentMoniker": "Laga\\Chromosome.cs",
@@ -110,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Population.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
               "RelativeDocumentMoniker": "Laga\\Population.cs",
@@ -123,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\Program.cs",
               "RelativeDocumentMoniker": "LagaExamples\\Program.cs",
@@ -133,6 +185,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T09:51:54.317Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

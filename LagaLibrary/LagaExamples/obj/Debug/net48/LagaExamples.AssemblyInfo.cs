@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LagaExamples")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fe753a2f8e7e688193e0859ef5682ca3b97deb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17160cf1453e59d7ef93c2fc0157828d845b3eb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("LagaExamples")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LagaExamples")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

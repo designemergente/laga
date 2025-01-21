@@ -14,6 +14,15 @@
           "lib/net45/_._": {}
         }
       },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
       "System.Data.DataSetExtensions/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -26,11 +35,12 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2025.1.16": {
+      "Laga/2025.1.21": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "compile": {
@@ -112,6 +122,19 @@
         "version.txt"
       ]
     },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "sha512": "cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
+      ]
+    },
     "System.Data.DataSetExtensions/4.5.0": {
       "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
       "type": "package",
@@ -131,7 +154,7 @@
         "version.txt"
       ]
     },
-    "Laga/2025.1.16": {
+    "Laga/2025.1.21": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -139,7 +162,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2025.1.16"
+      "Laga >= 2025.1.21"
     ]
   },
   "packageFolders": {
@@ -149,11 +172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
       "projectName": "LagaExamples",
-      "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
+      "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\LagaExamples.csproj",
       "packagesPath": "C:\\Users\\Carlos.delabarrera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaExamples\\obj\\",
+      "outputPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaExamples\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -174,8 +197,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
-              "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
+            "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj": {
+              "projectPath": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\Laga\\Laga.csproj"
             }
           }
         }
