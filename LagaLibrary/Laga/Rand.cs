@@ -1,4 +1,4 @@
-﻿using Laga.GeneticAlgorithm;
+﻿using Laga;
 using System;
 using System.Drawing;
 using System.Threading;

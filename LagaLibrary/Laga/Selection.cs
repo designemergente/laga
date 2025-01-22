@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// Natural selection class

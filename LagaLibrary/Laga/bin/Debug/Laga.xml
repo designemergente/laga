@@ -4,52 +4,52 @@
         <name>Laga</name>
     </assembly>
     <members>
-        <member name="T:Laga.GeneticAlgorithm.Chromosome`1">
+        <member name="T:Laga.Chromosome`1">
             <summary>
             Create and manipulate Chromosomes
             </summary>
         </member>
-        <member name="P:Laga.GeneticAlgorithm.Chromosome`1.Count">
+        <member name="P:Laga.Chromosome`1.Count">
             <summary>
             The size of the Chr++                                                                        
             </summary>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Func{Laga.GeneticAlgorithm.Chromosome{`0},System.Double},System.Collections.Generic.IEnumerable{`0})">
+        <member name="M:Laga.Chromosome`1.#ctor(System.Func{Laga.Chromosome{`0},System.Double},System.Collections.Generic.IEnumerable{`0})">
             <summary>
             Constructor accepting a fitness function
             </summary>
             <param name="FitnessFunction">Function to evaluate chromosome fitness</param>
             <param name="genes"></param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Int32)">
+        <member name="M:Laga.Chromosome`1.#ctor(System.Int32)">
             <summary>
             Constructor by size
             </summary>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+        <member name="M:Laga.Chromosome`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
             <summary>
             constructor from a list of genes
             </summary>
             <param name="genes"></param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.#ctor">
+        <member name="M:Laga.Chromosome`1.#ctor">
             <summary>
              Generic constructor
             </summary>
         </member>
-        <member name="P:Laga.GeneticAlgorithm.Chromosome`1.Fitness">
+        <member name="P:Laga.Chromosome`1.Fitness">
             <summary>
             Get and set the Chr fitnessString
             </summary>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.GetGene(System.Int32)">
+        <member name="M:Laga.Chromosome`1.GetGene(System.Int32)">
             <summary>
             Get the gene at specific index
             </summary>
             <param name="index">index</param>
             <returns>T</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.GetGenes(System.Int32,System.Int32)">
+        <member name="M:Laga.Chromosome`1.GetGenes(System.Int32,System.Int32)">
             <summary>
             GEt the genes from the start and end index.
             </summary>
@@ -58,71 +58,71 @@
             <returns>List</returns>
             <exception cref="T:System.ArgumentOutOfRangeException"></exception>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.SetGene(System.Int32,`0)">
+        <member name="M:Laga.Chromosome`1.SetGene(System.Int32,`0)">
             <summary>
             set a gene at a specific index
             </summary>
             <param name="index">The location in the Chr</param>
             <param name="gene">The gene to insert</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Add(`0)">
+        <member name="M:Laga.Chromosome`1.Add(`0)">
             <summary>
             Add gene to the Chromosome
             </summary>
             <param name="gene">The gene type</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.AddGenes(System.Collections.Generic.IEnumerable{`0})">
+        <member name="M:Laga.Chromosome`1.AddGenes(System.Collections.Generic.IEnumerable{`0})">
             <summary>
             Add data as collection into the Chr
             </summary>
             <param name="geneCollection">The collection of data</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.ToList">
+        <member name="M:Laga.Chromosome`1.ToList">
             <summary>
             Convert the Chromosome in a list
             </summary>
             <returns>List</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.ToArray">
+        <member name="M:Laga.Chromosome`1.ToArray">
             <summary>
             Convert the Chromosome in Array;
             </summary>
             <returns>Array</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.ToString">
+        <member name="M:Laga.Chromosome`1.ToString">
             <summary>
             Chromosome to String
             </summary>
             <returns>string</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.OnePointCrossover(Laga.GeneticAlgorithm.Chromosome{`0})">
+        <member name="M:Laga.Chromosome`1.OnePointCrossover(Laga.Chromosome{`0})">
             <summary>
             Perform a crossover with another chromosome using a specified function.
             </summary>
             <param name="parent">The other parent chromosome</param>
             <returns>Tuple containing two new Chromosome offspring</returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.TwoPointCrossover(Laga.GeneticAlgorithm.Chromosome{`0})">
+        <member name="M:Laga.Chromosome`1.TwoPointCrossover(Laga.Chromosome{`0})">
             <summary>
             Not implemented yet.
             </summary>
             <param name="parent"></param>
             <returns></returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Mutate(System.Double,System.Func{System.Int32,`0})">
+        <member name="M:Laga.Chromosome`1.Mutate(System.Double,System.Func{System.Int32,`0})">
             <summary>
             Mutate the chromosome
             </summary>
             <param name="mutationRate">The percentage possibility to occur the mutation</param>
             <param name="MutationFunction">The Mutation function</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.BinaryMutation(System.Double)">
+        <member name="M:Laga.Chromosome`1.BinaryMutation(System.Double)">
             <summary>
             Mutate the chromosome
             </summary>
             <param name="rate">The percentage possibility to occur the mutation</param>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.CharRandom(System.Double,System.Int32,System.Int32)">
+        <member name="M:Laga.Chromosome`1.CharRandom(System.Double,System.Int32,System.Int32)">
             <summary>
             
             </summary>
@@ -131,759 +131,10 @@
             <param name="end"></param>
             <returns></returns>
         </member>
-        <member name="M:Laga.GeneticAlgorithm.Chromosome`1.Shuffle">
+        <member name="M:Laga.Chromosome`1.Shuffle">
             <summary>
             Perform Fisher-Yates shuffle on the genes.
             </summary>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.Crossover`1">
-            <summary>
-            Different crossover type operations
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Crossover`1.OneRandPoint(Laga.GeneticAlgorithm.Chromosome{`0},Laga.GeneticAlgorithm.Chromosome{`0})">
-            <summary>
-            
-            </summary>
-            <param name="parentA"></param>
-            <param name="parentB"></param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentException"></exception>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.GenrChromosome">
-            <summary>
-            GenrPalette different Chromosome types
-            </summary>
-        </member>
-        <member name="P:Laga.GeneticAlgorithm.GenrChromosome.SizeChrom">
-            <summary>
-            size of the Chr
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.#ctor(System.Int32)">
-            <summary>
-            Constructor:
-            </summary>
-            <param name="Size">The Lengthof the Chromosome</param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Double,System.Double)">
-             <summary>
-             the method generates a Chr composed by random doubles
-             between min and max.
-             </summary>
-             <param name="min">The min value in the Chr</param>
-             <param name="max">The max value in the Chr(exclusive upper bound)</param>
-             <returns>double[]</returns>
-             <example> How to implement this class:
-             <code>
-             GenrChromosome Chr = new GenrChromosome(5);
-             double[] Chrom = Chr.NumberChromosome(0.0, 1.0);
-             
-             result:
-             0.207198212485387, 0.253313632334263, 0.566322204920613, 0.735812343068334, 0.479827285036364
-            
-             float[] Chrom = Chr.NumberChromosome(0.0f, 1.0f);
-             
-             result:
-             9.211745E+08, 1.134843E+09, 1.554793E+09, 1.223132E+09, 1.600176E+09
-            
-             int[] Chrom = Chr.NumberChromosome(0, 10);
-             
-             result: 
-             8, 3, 7, 2, 1
-             </code>
-             </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandDouble(System.Double,System.Double)">
-            <summary>
-            The method generates a Chr composed by random doubles between min and max.
-            </summary>
-            <param name="min">The min value in the Chr</param>
-            <param name="max">The max value in the Chr (excluded)</param>
-            <returns>double Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Single,System.Single)">
-            <summary>
-            the method generates a Chr composed by random floats
-            between min and max.
-            </summary>
-            <param name="min">The min value in the Chr</param>
-            <param name="max">The max value in the Chr(exclusive upper bound)</param>
-            <returns>float[]</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandFloat(System.Single,System.Single)">
-            <summary>
-            Generates a float Chr between min and max
-            </summary>
-            <param name="min">min value</param>
-            <param name="max">max value</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosome(System.Int32,System.Int32)">
-            <summary>
-            the method generates a Chr composed by random integers
-            between min and max.
-            </summary>
-            <param name="min">The min value in the Chr</param>
-            <param name="max">The max value in the Chr(exclusive upper bound)</param>
-            <returns>int[]</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)">
-            <summary>
-            Generates a Chromosome composed by random integers
-            </summary>
-            <param name="min">min value</param>
-            <param name="max">max value</param>
-            <returns>int Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeBinary(System.Int32)">
-            <summary>
-            creates a binary Chr composed by 1s and 0s;
-            </summary>
-            <returns> a random list of 1s and 0s</returns>
-            <example>
-            <code>
-            GenrChromosome Chr = new GenrChromosome(5);
-            int[] Chrom = Chr.NumberChromosomeBinary();
-            
-            result:
-            1, 1, 0, 1, 1
-            </code>
-            </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_IntBinary(System.Int32)">
-            <summary>
-            Generates a binary Chromosome of 1s and 0s int type.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)">
-            <summary>
-            the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
-            the method is based on integer numbers. this method is designed by combinatorial problems.
-            </summary>
-            <param name="min">the minimum value in the sequence</param>
-            /// <param name="max">the maximum value in the sequence</param>
-            <returns>a non repeat random integer list</returns>
-            <example>
-            <code>
-            GenrChromosome Chr = new GenrChromosome(5);
-            char[] Chrom = Chr.NumberChromosomeSwap(0, 4);
-            
-            results:
-            4, 1, 0, 2, 3
-            3, 1, 2, 0, 4
-            </code>
-            </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)">
-            <summary>
-            GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
-            </summary>
-            <param name="min">min value</param>
-            <param name="max">max value</param>
-            <returns>int Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosomeBinary">
-            <summary>
-            Generates a binary Chr of chars.
-            </summary>
-            <returns>a random char list of 1s and 0s</returns>
-            <example>
-            <code>
-            GenrChromosome Chr = new GenrChromosome(5);
-            char[] Chrom = Chr.CharChromosomeBinary();
-            
-            result:
-            0, 1, 0, 1, 0,
-            </code>
-            </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_CharBinary">
-            <summary>
-            Generates a binary Chromosome of 1s and 0s char type.
-            </summary>
-            <returns>char Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.CharChromosome(System.Int32,System.Int32)">
-             <summary>
-             Generates an random char Chr composed by characters.
-             See <a href="http://www.asciitable.com/">this link</a> for more information.
-             </summary>
-             <param name="start">the start number in the table, inclusive</param>
-             <param name="end">the end number in the table, exclusive</param>
-             <returns>returns a random list of characters</returns>
-             <example>
-             <code>
-             GenrChromosome Chr = new GenrChromosome(25);
-             char[] Chrom = Chr.CharChromosome(65, 90);
-             
-             result:
-             E, B, C, N, F, C, O, P, C, H, O, U, Q, U, G, L, K, Z, E, K, X, A, L, B, Q,
-            
-             char[] Chrom = Chr.CharChromosome(33, 47);
-             
-             result
-             ,, -, !, /, -, ', %, !, %, %, !, /, ,, +, ), *, ), /, |, /, ], +, (, !, +,
-             
-             char[] Chrom = Chr.CharChromosome(97, 122);
-             
-             result
-             q, a, h, k, j, d, u, o, d, l, w, b, d, i, l, l, h, c, n, c, s, d, k, r, h,
-             </code>
-             </example>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrChromosome.DNA_Char(System.Int32,System.Int32)">
-            <summary>
-            Generates a random char Chromosome composed by characters.
-            See <a href="http://www.asciitable.com/">this link</a> for more information.
-            </summary>
-            <param name="start">the start number in the table, inclusive</param>
-            <param name="end">the end number in the table, exclusive</param>
-            <returns>char Chromosome</returns>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.GenrGenes">
-            <summary>
-            GenrPalette DNA for Chromosome classes
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrGenes.RandomChromosome``1(System.Int32,``0,``0,System.Func{``0,``0,``0})">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="size"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <param name="generator"></param>
-            <returns>Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrGenes.Binary_Integer(System.Int32)">
-            <summary>
-            Generates a binary Chromosome of 1s and 0s int type.
-            </summary>
-            /// <param name="size">the number of integers in the Chr</param> 
-            <returns>int Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrGenes.Binary_Char(System.Int32)">
-            <summary>
-            Generates a binary Chromosome of 1s and 0s char type.
-            </summary>
-            <param name="size">the length in the Chr</param> 
-            <returns>char Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrGenes.Rand_Char(System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Generates a random char Chromosome composed by characters.
-            See <a href="http://www.asciitable.com/">this link</a> for more information.
-            </summary>
-            <param name="size">the length of characters in the Chr</param>
-            <param name="start">the start number in the table, inclusive</param>
-            <param name="end">the end number in the table, exclusive</param>
-            <returns>char Chromosome</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrGenes.Rand_Vector(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)">
-            <summary>
-            Generates a random Vector chromosome
-            </summary>
-            <param name="size">number of Vectors in the Chromosome</param>
-            <param name="Xcoord">The range of values in the X coordinate</param>
-            <param name="Ycoord">The range of values in the Y coordinate</param>
-            <param name="Zcoord">The range of values in the Z coordinate</param>
-            <returns>Vector Chromosome</returns>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.GenrPopulation">
-            <summary>
-            GenrPalette basic populations
-            </summary>
-        </member>
-        <member name="P:Laga.GeneticAlgorithm.GenrPopulation.SizePop">
-            <summary>
-            SizePopulation
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.GenrPopulation.#ctor(System.Int32)">
-            <summary>
-            Constructor:
-            </summary>
-            <param name="SizePopulation">The size of the Population</param>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.Mutation">
-            <summary>
-            Mutate class
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Mutation.Mutate(System.Int32,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Mutation.CharMutation(System.Int32,System.Int32)">
-            <summary>
-            Mutate a char.
-            </summary>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Mutation.DblMutation(System.Double,System.Double)">
-            <summary>
-            
-            </summary>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.Population`1">
-            <summary>
-            Create and Manipulate Populations
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="P:Laga.GeneticAlgorithm.Population`1.Count">
-            <summary>
-            Population count
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.HighestFitnessChromosome">
-            <summary>
-            Return the higher chromosome in the population
-            </summary>
-            <returns><![CDATA[Chromosome<T>]]></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.LowestFitnessChromosome">
-            <summary>
-            Return the lower chromosome in the population
-            </summary>
-            <returns><![CDATA[Chromosome<T>]]></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.SumFitness">
-            <summary>
-            Calculates the sum of all fitness values in the population.
-            </summary>
-            <returns>The sum of fitness values of all chromosomes.</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.GetAverageFitness">
-            <summary>
-            return the average fitness in the population
-            </summary>
-            <returns>double</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.#ctor(System.Int32)">
-            <summary>
-            Construct a predifined size population 
-            </summary>
-            <param name="SizePopulation"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.#ctor">
-            <summary>
-            Construct a population with no size
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Sort(System.Boolean)">
-            <summary>
-            Sorts the chromosomes in the population by fitness.
-            </summary>
-            <param name="ascending">If true, sorts in ascending order; otherwise, descending order.</param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Add(Laga.GeneticAlgorithm.Chromosome{`0})">
-            <summary>
-            Add a chromosome to the population
-            </summary>
-            <typeparamref name="T">The type for Chr</typeparamref>
-            <param name="chromosome"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.AddRange(System.Collections.Generic.IEnumerable{Laga.GeneticAlgorithm.Chromosome{`0}})">
-            <summary>
-            Add a range of chromosomes to the population.
-            </summary>
-            <param name="range"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Delete(System.Int32)">
-            <summary>
-            Delete a chromosome from the population
-            </summary>
-            <param name="index"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.GetChromosome(System.Int32)">
-            <summary>
-            Get the chromosome from the population.
-            </summary>
-            <param name="index"></param>
-            <returns><![CDATA[Chromosome<T>]]></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.ToString">
-            <summary>
-            Print a population
-            </summary>
-            <returns>string</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.GetEnumerator">
-            <summary>
-            IEnumerator
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Selection(System.String,System.Boolean,System.Int32,System.Boolean,System.Int32)">
-            <summary>
-            Select a chromosome using the specified selection method.
-            </summary>
-            <param name="method">The type of selection to perform ("roulette" or "tournament").</param>
-            <param name="invert">invert the fitness for roulettewheel method</param>
-            <param name="tournamentSize"></param>
-            <param name="elitism"></param>
-            <param name="eliteCount"></param>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.RouletteWheelSelection(Laga.GeneticAlgorithm.Population{`0}.PrecomputedFitness)">
-            <summary>
-            Roulette Wheel Selection: Selects a chromosome based on relative fitness.
-            </summary>
-            <returns>A chromosome selected by roulette wheel.</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.TournamentSelection(System.Int32)">
-            <summary>
-            Tournament Selection: Selects the best chromosome from a random subset.
-            </summary>
-            <param name="tournamentSize">The number of chromosomes in the tournament.</param>
-            <returns>A chromosome selected by tournament.</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Crossover(System.String,System.Double)">
-            <summary>
-            
-            </summary>
-            <param name="method"></param>
-            <param name="rate"></param>
-            <exception cref="T:System.InvalidOperationException"></exception>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32,System.Double,System.Double)">
-            <summary>
-            
-            </summary>
-            <param name="method"></param>
-            <param name="populationRate"></param>
-            <param name="chromosomeRate"></param>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.RankingSort">
-            <summary>
-            To sort chromosomes in populations according to fitness evaluation.
-            </summary>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.Replacement">
-            <summary>
-            To replace old populations with new populations
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.#ctor">
-            <summary>
-             Replacement class
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)">
-            <summary>
-            This replace method is ideal for combinatorial problems with objects types in chromsome. and where is not possible generate new data in the replacement population.
-            </summary>
-            <param name="sonMutPopulation">the son mutated population</param>
-            <param name="ParentsPopulation">the parents population</param>
-            <param name="sizePopulation">the size of the population</param>
-            <returns>object[][]</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)">
-            <summary>
-            Creates a new population using the mutated inheritance and new random chromosomes.
-            </summary>
-            <param name="sonMutPopulation">Object[][]</param>
-            <param name="percent">float</param>
-            <param name="sizePopulation">int</param>
-            <returns>object[][]</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)">
-             ReplaceInheritanceRandom method.
-             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-             individuals will (parents) and how many new ones will be created for the new population.
-             
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @param min    			-> min value in the chromosome.
-             @param max    			-> max value in the chromosome.
-             @param percentInherit    -> percentInherit.
-             @return object[][] new population.
-             
-             
-            <summary>
-            this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will(parents) and how many new ones will be created for the new population.
-            </summary>
-            <param name="sonMutPopulation">the son mutated population</param>
-            <param name="ParentsPopulation">the parents population</param>
-            <param name="sizePopulation">the size of the population</param>
-            <param name="percentInherit">percentInherit</param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)">
-             ReplaceInheritance method.
-             this replace method is ideal for combinatorial problems with float types in chromsome.
-             and where is not possible generate new data in the replacement population.
-             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @return double[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)">
-             ReplaceRandom method.
-             this replace method create a new population using the mutated inheritance and new random chromsomes.
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param sizePopulation    -> the size of the population.
-             @param min				-> the minimum value in the crhomosome
-             @param max				-> the maximum value in the chromosome
-             @return double[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)">
-             ReplaceInheritanceRandom method.
-             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-             individuals will (parents) and how many new ones will be created for the new population.
-             
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @param min    			-> min value in the chromosome.
-             @param max    			-> max value in the chromosome.
-             @param percentInherit    -> percentInherit.
-             @return double[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <param name="percentInherit"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)">
-             ReplaceInheritance method.
-             this replace method is ideal for combinatorial problems with float types in chromsome.
-             and where is not possible generate new data in the replacement population.
-             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @return float[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)">
-             ReplaceRandom method.
-             this replace method create a new population using the mutated inheritance and new random chromsomes.
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param sizePopulation    -> the size of the population.
-             @param min				-> the minimum value in the crhomosome
-             @param max				-> the maximum value in the chromosome
-             @return float[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)">
-             ReplaceInheritanceRandom method.
-             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-             individuals will (parents) and how many new ones will be created for the new population.
-             
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @param min    			-> min value in the chromosome.
-             @param max    			-> max value in the chromosome.
-             @param percentInherit    -> percentInherit.
-             @return float[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <param name="percentInherit"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)">
-             ReplaceInheritance method.
-             this replace method is ideal for combinatorial problems with float types in chromsome.
-             and where is not possible generate new data in the replacement population.
-             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @return int[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)">
-             ReplaceRandom method.
-             this replace method create a new population using the mutated inheritance and new random chromsomes.
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param sizePopulation    -> the size of the population.
-             @param min				-> the minimum value in the crhomosome
-             @param max				-> the maximum value in the chromosome
-             @return int[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)">
-             ReplaceInheritanceRandom method.
-             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
-             individuals will (parents) and how many new ones will be created for the new population.
-             
-            
-             @param sonMutPopulation  -> the son mutated population
-             @param ParentsPopulation -> the parents population.
-             @param sizePopulation    -> the size of the population.
-             @param min    			-> min value in the chromosome.
-             @param max    			-> max value in the chromosome.
-             @param percentInherit    -> percentInherit.
-             @return int[][] new population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="sonMutPopulation"></param>
-            <param name="ParentsPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="min"></param>
-            <param name="max"></param>
-            <param name="percentInherit"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)">
-            CharRandomReplace method.
-             set a new a population from the selected individuals.
-            
-             @param newPartOfPopulation -> selected individuals.
-             @param sizePopulation      -> the size of the population.
-             @return char[][] population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="newPartOfPopulation"></param>
-            <param name="sizePopulation"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)">
-            CharRandomReplace method.
-             set a new a population from the selected individuals.
-            
-             @param newPartOfPopulation -> selected individuals.
-             @param sizePopulation      -> the size of the population.
-             @return char[][] population.
-             
-             
-            <summary>
-            
-            </summary>
-            <param name="newPartOfPopulation"></param>
-            <param name="sizePopulation"></param>
-            <param name="start"></param>
-            <param name="end"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Laga.GeneticAlgorithm.Selection`1">
-            <summary>
-            Natural selection class
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Selection`1.#ctor">
-            <summary>
-            The class to select and operates on populations
-            </summary>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Selection`1.RouletteWheel(Laga.GeneticAlgorithm.Population{`0},System.Int32,System.Boolean)">
-            <summary>
-            Performs a roulette wheel selection over a population.
-            Chromosomes with higher fitness have a proportionally higher chance of selection.
-            </summary>
-            <param name="population">The popolution to perform roulette wheel selection on</param>
-            <param name="maxItem">>Maximum number of chromosomes to select for the mating pool</param>
-            <param name="normalizeFitness">If true, uses normalized fitness probabilities for selection</param>
-            <returns>Population</returns>
-        </member>
-        <member name="M:Laga.GeneticAlgorithm.Selection`1.TournamentSelection(Laga.GeneticAlgorithm.Population{`0},System.Int32,System.Int32)">
-            <summary>
-            Performs a tournament selection, where a subset of chromosomes compete,
-            and the chromosome with the highest fitness in the subset is selected.
-            </summary>
-            <param name="population">The population to perform tournament selection on</param>
-            <param name="tournamentSize">The number of chromosomes in each tournament, sometimes called pressure</param>
-            <param name="selectionCount">The number of chromosomes to select for the mating pool</param>
-            <returns>A new population representing the mating pool</returns>
         </member>
         <member name="T:Laga.Numbers.ColorRange">
             <summary>
@@ -1762,10 +1013,277 @@
             <param name="vector">First Vector</param>
             <returns>Vector</returns>
         </member>
-        <member name="T:Laga.FunctionOptimization">
+        <member name="T:Laga.Crossover`1">
             <summary>
-            FunctionOptimization
+            Different crossover type operations
             </summary>
+        </member>
+        <member name="M:Laga.Crossover`1.OneRandPoint(Laga.Chromosome{`0},Laga.Chromosome{`0})">
+            <summary>
+            
+            </summary>
+            <param name="parentA"></param>
+            <param name="parentB"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:Laga.GenrChromosome">
+            <summary>
+            GenrPalette different Chromosome types
+            </summary>
+        </member>
+        <member name="P:Laga.GenrChromosome.SizeChrom">
+            <summary>
+            size of the Chr
+            </summary>
+        </member>
+        <member name="M:Laga.GenrChromosome.#ctor(System.Int32)">
+            <summary>
+            Constructor:
+            </summary>
+            <param name="Size">The Lengthof the Chromosome</param>
+        </member>
+        <member name="M:Laga.GenrChromosome.NumberChromosome(System.Double,System.Double)">
+             <summary>
+             the method generates a Chr composed by random doubles
+             between min and max.
+             </summary>
+             <param name="min">The min value in the Chr</param>
+             <param name="max">The max value in the Chr(exclusive upper bound)</param>
+             <returns>double[]</returns>
+             <example> How to implement this class:
+             <code>
+             GenrChromosome Chr = new GenrChromosome(5);
+             double[] Chrom = Chr.NumberChromosome(0.0, 1.0);
+             
+             result:
+             0.207198212485387, 0.253313632334263, 0.566322204920613, 0.735812343068334, 0.479827285036364
+            
+             float[] Chrom = Chr.NumberChromosome(0.0f, 1.0f);
+             
+             result:
+             9.211745E+08, 1.134843E+09, 1.554793E+09, 1.223132E+09, 1.600176E+09
+            
+             int[] Chrom = Chr.NumberChromosome(0, 10);
+             
+             result: 
+             8, 3, 7, 2, 1
+             </code>
+             </example>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_RandDouble(System.Double,System.Double)">
+            <summary>
+            The method generates a Chr composed by random doubles between min and max.
+            </summary>
+            <param name="min">The min value in the Chr</param>
+            <param name="max">The max value in the Chr (excluded)</param>
+            <returns>double Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.NumberChromosome(System.Single,System.Single)">
+            <summary>
+            the method generates a Chr composed by random floats
+            between min and max.
+            </summary>
+            <param name="min">The min value in the Chr</param>
+            <param name="max">The max value in the Chr(exclusive upper bound)</param>
+            <returns>float[]</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_RandFloat(System.Single,System.Single)">
+            <summary>
+            Generates a float Chr between min and max
+            </summary>
+            <param name="min">min value</param>
+            <param name="max">max value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.NumberChromosome(System.Int32,System.Int32)">
+            <summary>
+            the method generates a Chr composed by random integers
+            between min and max.
+            </summary>
+            <param name="min">The min value in the Chr</param>
+            <param name="max">The max value in the Chr(exclusive upper bound)</param>
+            <returns>int[]</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_RandInteger(System.Int32,System.Int32)">
+            <summary>
+            Generates a Chromosome composed by random integers
+            </summary>
+            <param name="min">min value</param>
+            <param name="max">max value</param>
+            <returns>int Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.NumberChromosomeBinary(System.Int32)">
+            <summary>
+            creates a binary Chr composed by 1s and 0s;
+            </summary>
+            <returns> a random list of 1s and 0s</returns>
+            <example>
+            <code>
+            GenrChromosome Chr = new GenrChromosome(5);
+            int[] Chrom = Chr.NumberChromosomeBinary();
+            
+            result:
+            1, 1, 0, 1, 1
+            </code>
+            </example>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_IntBinary(System.Int32)">
+            <summary>
+            Generates a binary Chromosome of 1s and 0s int type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)">
+            <summary>
+            the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
+            the method is based on integer numbers. this method is designed by combinatorial problems.
+            </summary>
+            <param name="min">the minimum value in the sequence</param>
+            /// <param name="max">the maximum value in the sequence</param>
+            <returns>a non repeat random integer list</returns>
+            <example>
+            <code>
+            GenrChromosome Chr = new GenrChromosome(5);
+            char[] Chrom = Chr.NumberChromosomeSwap(0, 4);
+            
+            results:
+            4, 1, 0, 2, 3
+            3, 1, 2, 0, 4
+            </code>
+            </example>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)">
+            <summary>
+            GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
+            </summary>
+            <param name="min">min value</param>
+            <param name="max">max value</param>
+            <returns>int Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.CharChromosomeBinary">
+            <summary>
+            Generates a binary Chr of chars.
+            </summary>
+            <returns>a random char list of 1s and 0s</returns>
+            <example>
+            <code>
+            GenrChromosome Chr = new GenrChromosome(5);
+            char[] Chrom = Chr.CharChromosomeBinary();
+            
+            result:
+            0, 1, 0, 1, 0,
+            </code>
+            </example>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_CharBinary">
+            <summary>
+            Generates a binary Chromosome of 1s and 0s char type.
+            </summary>
+            <returns>char Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrChromosome.CharChromosome(System.Int32,System.Int32)">
+             <summary>
+             Generates an random char Chr composed by characters.
+             See <a href="http://www.asciitable.com/">this link</a> for more information.
+             </summary>
+             <param name="start">the start number in the table, inclusive</param>
+             <param name="end">the end number in the table, exclusive</param>
+             <returns>returns a random list of characters</returns>
+             <example>
+             <code>
+             GenrChromosome Chr = new GenrChromosome(25);
+             char[] Chrom = Chr.CharChromosome(65, 90);
+             
+             result:
+             E, B, C, N, F, C, O, P, C, H, O, U, Q, U, G, L, K, Z, E, K, X, A, L, B, Q,
+            
+             char[] Chrom = Chr.CharChromosome(33, 47);
+             
+             result
+             ,, -, !, /, -, ', %, !, %, %, !, /, ,, +, ), *, ), /, |, /, ], +, (, !, +,
+             
+             char[] Chrom = Chr.CharChromosome(97, 122);
+             
+             result
+             q, a, h, k, j, d, u, o, d, l, w, b, d, i, l, l, h, c, n, c, s, d, k, r, h,
+             </code>
+             </example>
+        </member>
+        <member name="M:Laga.GenrChromosome.DNA_Char(System.Int32,System.Int32)">
+            <summary>
+            Generates a random char Chromosome composed by characters.
+            See <a href="http://www.asciitable.com/">this link</a> for more information.
+            </summary>
+            <param name="start">the start number in the table, inclusive</param>
+            <param name="end">the end number in the table, exclusive</param>
+            <returns>char Chromosome</returns>
+        </member>
+        <member name="T:Laga.GenrGenes">
+            <summary>
+            GenrPalette DNA for Chromosome classes
+            </summary>
+        </member>
+        <member name="M:Laga.GenrGenes.RandomChromosome``1(System.Int32,``0,``0,System.Func{``0,``0,``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="size"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="generator"></param>
+            <returns>Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrGenes.Binary_Integer(System.Int32)">
+            <summary>
+            Generates a binary Chromosome of 1s and 0s int type.
+            </summary>
+            /// <param name="size">the number of integers in the Chr</param> 
+            <returns>int Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrGenes.Binary_Char(System.Int32)">
+            <summary>
+            Generates a binary Chromosome of 1s and 0s char type.
+            </summary>
+            <param name="size">the length in the Chr</param> 
+            <returns>char Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrGenes.Rand_Char(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates a random char Chromosome composed by characters.
+            See <a href="http://www.asciitable.com/">this link</a> for more information.
+            </summary>
+            <param name="size">the length of characters in the Chr</param>
+            <param name="start">the start number in the table, inclusive</param>
+            <param name="end">the end number in the table, exclusive</param>
+            <returns>char Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrGenes.Rand_Vector(System.Int32,Laga.Numbers.Range,Laga.Numbers.Range,Laga.Numbers.Range)">
+            <summary>
+            Generates a random Vector chromosome
+            </summary>
+            <param name="size">number of Vectors in the Chromosome</param>
+            <param name="Xcoord">The range of values in the X coordinate</param>
+            <param name="Ycoord">The range of values in the Y coordinate</param>
+            <param name="Zcoord">The range of values in the Z coordinate</param>
+            <returns>Vector Chromosome</returns>
+        </member>
+        <member name="T:Laga.GenrPopulation">
+            <summary>
+            GenrPalette basic populations
+            </summary>
+        </member>
+        <member name="P:Laga.GenrPopulation.SizePop">
+            <summary>
+            SizePopulation
+            </summary>
+        </member>
+        <member name="M:Laga.GenrPopulation.#ctor(System.Int32)">
+            <summary>
+            Constructor:
+            </summary>
+            <param name="SizePopulation">The size of the Population</param>
         </member>
         <member name="T:Laga.IO.IOCSV">
             <summary>
@@ -1780,7 +1298,7 @@
             <param name="Features"></param>
             <param name="Data"></param>
         </member>
-        <member name="M:Laga.IO.IOCSV.#ctor(System.String,System.String[],Laga.GeneticAlgorithm.Population{System.String})">
+        <member name="M:Laga.IO.IOCSV.#ctor(System.String,System.String[],Laga.Population{System.String})">
             <summary>
             Write a CSV based on population data
             </summary>
@@ -1795,7 +1313,7 @@
             <param name="FileName">The file name to save the CSV file</param>
             <param name="Features">Array of strings representing the features</param>
         </member>
-        <member name="M:Laga.IO.IOCSV.AddRowData(Laga.GeneticAlgorithm.Chromosome{System.String})">
+        <member name="M:Laga.IO.IOCSV.AddRowData(Laga.Chromosome{System.String})">
             <summary>
             Append a row data
             </summary>
@@ -2215,6 +1733,483 @@
             <param name="message">string to modify</param>
             <param name="character">character to remove</param>
             <returns>string</returns>
+        </member>
+        <member name="T:Laga.Mutation">
+            <summary>
+            Mutate class
+            </summary>
+        </member>
+        <member name="M:Laga.Mutation.Mutate(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Mutation.CharMutation(System.Int32,System.Int32)">
+            <summary>
+            Mutate a char.
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Mutation.DblMutation(System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Laga.Population`1">
+            <summary>
+            Create and Manipulate Populations
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Laga.Population`1.Count">
+            <summary>
+            Population count
+            </summary>
+        </member>
+        <member name="M:Laga.Population`1.HighestFitnessChromosome">
+            <summary>
+            Return the higher chromosome in the population
+            </summary>
+            <returns><![CDATA[Chromosome<T>]]></returns>
+        </member>
+        <member name="M:Laga.Population`1.LowestFitnessChromosome">
+            <summary>
+            Return the lower chromosome in the population
+            </summary>
+            <returns><![CDATA[Chromosome<T>]]></returns>
+        </member>
+        <member name="M:Laga.Population`1.SumFitness">
+            <summary>
+            Calculates the sum of all fitness values in the population.
+            </summary>
+            <returns>The sum of fitness values of all chromosomes.</returns>
+        </member>
+        <member name="M:Laga.Population`1.GetAverageFitness">
+            <summary>
+            return the average fitness in the population
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:Laga.Population`1.#ctor(System.Int32)">
+            <summary>
+            Construct a predifined size population 
+            </summary>
+            <param name="SizePopulation"></param>
+        </member>
+        <member name="M:Laga.Population`1.#ctor">
+            <summary>
+            Construct a population with no size
+            </summary>
+        </member>
+        <member name="M:Laga.Population`1.Sort(System.Boolean)">
+            <summary>
+            Sorts the chromosomes in the population by fitness.
+            </summary>
+            <param name="ascending">If true, sorts in ascending order; otherwise, descending order.</param>
+        </member>
+        <member name="M:Laga.Population`1.Add(Laga.Chromosome{`0})">
+            <summary>
+            Add a chromosome to the population
+            </summary>
+            <typeparamref name="T">The type for Chr</typeparamref>
+            <param name="chromosome"></param>
+        </member>
+        <member name="M:Laga.Population`1.AddRange(System.Collections.Generic.IEnumerable{Laga.Chromosome{`0}})">
+            <summary>
+            Add a range of chromosomes to the population.
+            </summary>
+            <param name="range"></param>
+        </member>
+        <member name="M:Laga.Population`1.Delete(System.Int32)">
+            <summary>
+            Delete a chromosome from the population
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Laga.Population`1.GetChromosome(System.Int32)">
+            <summary>
+            Get the chromosome from the population.
+            </summary>
+            <param name="index"></param>
+            <returns><![CDATA[Chromosome<T>]]></returns>
+        </member>
+        <member name="M:Laga.Population`1.ToString">
+            <summary>
+            Print a population
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:Laga.Population`1.GetEnumerator">
+            <summary>
+            IEnumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Population`1.Selection(System.String,System.Boolean,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Select a chromosome using the specified selection method.
+            </summary>
+            <param name="method">The type of selection to perform ("roulette" or "tournament").</param>
+            <param name="invert">invert the fitness for roulettewheel method</param>
+            <param name="tournamentSize"></param>
+            <param name="elitism"></param>
+            <param name="eliteCount"></param>
+        </member>
+        <member name="M:Laga.Population`1.RouletteWheelSelection(Laga.Population{`0}.PrecomputedFitness)">
+            <summary>
+            Roulette Wheel Selection: Selects a chromosome based on relative fitness.
+            </summary>
+            <returns>A chromosome selected by roulette wheel.</returns>
+        </member>
+        <member name="M:Laga.Population`1.TournamentSelection(System.Int32)">
+            <summary>
+            Tournament Selection: Selects the best chromosome from a random subset.
+            </summary>
+            <param name="tournamentSize">The number of chromosomes in the tournament.</param>
+            <returns>A chromosome selected by tournament.</returns>
+        </member>
+        <member name="M:Laga.Population`1.Crossover(System.String,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="method"></param>
+            <param name="rate"></param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Laga.Population`1.Mutation(System.String,System.Double,System.Double,System.Int32,System.Int32,System.Double,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="method"></param>
+            <param name="populationRate"></param>
+            <param name="chromosomeRate"></param>
+        </member>
+        <member name="T:Laga.RankingSort">
+            <summary>
+            To sort chromosomes in populations according to fitness evaluation.
+            </summary>
+        </member>
+        <member name="T:Laga.Replacement">
+            <summary>
+            To replace old populations with new populations
+            </summary>
+        </member>
+        <member name="M:Laga.Replacement.#ctor">
+            <summary>
+             Replacement class
+            </summary>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritance(System.Object[][],System.Object[][],System.Int32)">
+            <summary>
+            This replace method is ideal for combinatorial problems with objects types in chromsome. and where is not possible generate new data in the replacement population.
+            </summary>
+            <param name="sonMutPopulation">the son mutated population</param>
+            <param name="ParentsPopulation">the parents population</param>
+            <param name="sizePopulation">the size of the population</param>
+            <returns>object[][]</returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceRandom(System.Object[][],System.Single,System.Int32)">
+            <summary>
+            Creates a new population using the mutated inheritance and new random chromosomes.
+            </summary>
+            <param name="sonMutPopulation">Object[][]</param>
+            <param name="percent">float</param>
+            <param name="sizePopulation">int</param>
+            <returns>object[][]</returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritanceRandom(System.Object[][],System.Object[][],System.Int32,System.Single)">
+             ReplaceInheritanceRandom method.
+             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+             individuals will (parents) and how many new ones will be created for the new population.
+             
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @param min    			-> min value in the chromosome.
+             @param max    			-> max value in the chromosome.
+             @param percentInherit    -> percentInherit.
+             @return object[][] new population.
+             
+             
+            <summary>
+            this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many individuals will(parents) and how many new ones will be created for the new population.
+            </summary>
+            <param name="sonMutPopulation">the son mutated population</param>
+            <param name="ParentsPopulation">the parents population</param>
+            <param name="sizePopulation">the size of the population</param>
+            <param name="percentInherit">percentInherit</param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritance(System.Double[][],System.Double[][],System.Int32)">
+             ReplaceInheritance method.
+             this replace method is ideal for combinatorial problems with float types in chromsome.
+             and where is not possible generate new data in the replacement population.
+             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @return double[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceRandom(System.Double[][],System.Int32,System.Double,System.Double)">
+             ReplaceRandom method.
+             this replace method create a new population using the mutated inheritance and new random chromsomes.
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param sizePopulation    -> the size of the population.
+             @param min				-> the minimum value in the crhomosome
+             @param max				-> the maximum value in the chromosome
+             @return double[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritanceRandom(System.Double[][],System.Double[][],System.Int32,System.Double,System.Double,System.Single)">
+             ReplaceInheritanceRandom method.
+             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+             individuals will (parents) and how many new ones will be created for the new population.
+             
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @param min    			-> min value in the chromosome.
+             @param max    			-> max value in the chromosome.
+             @param percentInherit    -> percentInherit.
+             @return double[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentInherit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritance(System.Single[][],System.Single[][],System.Int32)">
+             ReplaceInheritance method.
+             this replace method is ideal for combinatorial problems with float types in chromsome.
+             and where is not possible generate new data in the replacement population.
+             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @return float[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceRandom(System.Single[][],System.Int32,System.Single,System.Single)">
+             ReplaceRandom method.
+             this replace method create a new population using the mutated inheritance and new random chromsomes.
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param sizePopulation    -> the size of the population.
+             @param min				-> the minimum value in the crhomosome
+             @param max				-> the maximum value in the chromosome
+             @return float[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritanceRandom(System.Single[][],System.Single[][],System.Int32,System.Single,System.Single,System.Single)">
+             ReplaceInheritanceRandom method.
+             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+             individuals will (parents) and how many new ones will be created for the new population.
+             
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @param min    			-> min value in the chromosome.
+             @param max    			-> max value in the chromosome.
+             @param percentInherit    -> percentInherit.
+             @return float[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentInherit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritance(System.Int32[][],System.Int32[][],System.Int32)">
+             ReplaceInheritance method.
+             this replace method is ideal for combinatorial problems with float types in chromsome.
+             and where is not possible generate new data in the replacement population.
+             The Replace Inheritance use the parents and the mutated Inheritance. to create a new population
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @return int[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceRandom(System.Int32[][],System.Int32,System.Int32,System.Int32)">
+             ReplaceRandom method.
+             this replace method create a new population using the mutated inheritance and new random chromsomes.
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param sizePopulation    -> the size of the population.
+             @param min				-> the minimum value in the crhomosome
+             @param max				-> the maximum value in the chromosome
+             @return int[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.ReplaceInheritanceRandom(System.Int32[][],System.Int32[][],System.Int32,System.Int32,System.Double,System.Single)">
+             ReplaceInheritanceRandom method.
+             this replace method is based in a mix between inheritance and random method, the percentInherit, determines how many
+             individuals will (parents) and how many new ones will be created for the new population.
+             
+            
+             @param sonMutPopulation  -> the son mutated population
+             @param ParentsPopulation -> the parents population.
+             @param sizePopulation    -> the size of the population.
+             @param min    			-> min value in the chromosome.
+             @param max    			-> max value in the chromosome.
+             @param percentInherit    -> percentInherit.
+             @return int[][] new population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="sonMutPopulation"></param>
+            <param name="ParentsPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="percentInherit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.BinaryCharRandomReplace(System.Char[][],System.Int32)">
+            CharRandomReplace method.
+             set a new a population from the selected individuals.
+            
+             @param newPartOfPopulation -> selected individuals.
+             @param sizePopulation      -> the size of the population.
+             @return char[][] population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="newPartOfPopulation"></param>
+            <param name="sizePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Laga.Replacement.CharRandomReplace(System.Char[][],System.Int32,System.Int32,System.Int32)">
+            CharRandomReplace method.
+             set a new a population from the selected individuals.
+            
+             @param newPartOfPopulation -> selected individuals.
+             @param sizePopulation      -> the size of the population.
+             @return char[][] population.
+             
+             
+            <summary>
+            
+            </summary>
+            <param name="newPartOfPopulation"></param>
+            <param name="sizePopulation"></param>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Laga.Selection`1">
+            <summary>
+            Natural selection class
+            </summary>
+        </member>
+        <member name="M:Laga.Selection`1.#ctor">
+            <summary>
+            The class to select and operates on populations
+            </summary>
+        </member>
+        <member name="M:Laga.Selection`1.RouletteWheel(Laga.Population{`0},System.Int32,System.Boolean)">
+            <summary>
+            Performs a roulette wheel selection over a population.
+            Chromosomes with higher fitness have a proportionally higher chance of selection.
+            </summary>
+            <param name="population">The popolution to perform roulette wheel selection on</param>
+            <param name="maxItem">>Maximum number of chromosomes to select for the mating pool</param>
+            <param name="normalizeFitness">If true, uses normalized fitness probabilities for selection</param>
+            <returns>Population</returns>
+        </member>
+        <member name="M:Laga.Selection`1.TournamentSelection(Laga.Population{`0},System.Int32,System.Int32)">
+            <summary>
+            Performs a tournament selection, where a subset of chromosomes compete,
+            and the chromosome with the highest fitness in the subset is selected.
+            </summary>
+            <param name="population">The population to perform tournament selection on</param>
+            <param name="tournamentSize">The number of chromosomes in each tournament, sometimes called pressure</param>
+            <param name="selectionCount">The number of chromosomes to select for the mating pool</param>
+            <returns>A new population representing the mating pool</returns>
         </member>
     </members>
 </doc>

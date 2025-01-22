@@ -4,7 +4,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// Create and manipulate Chromosomes
@@ -177,6 +177,13 @@ namespace Laga.GeneticAlgorithm
         /// <returns>Tuple containing two new Chromosome offspring</returns>
         public (Chromosome<T> child1, Chromosome<T> child2) OnePointCrossover(Chromosome<T> parent)
         {
+            if (parent.Count <= 2) //small chromosomes.
+            {
+                var child1 = new List<T> { parent.GetGene(1), this.GetGene(0)};
+                var child2 = new List<T> { this.GetGene(1), parent.GetGene(0)};
+                return (new Chromosome<T>(child1), new Chromosome<T>(child2));
+            }
+
             int crossoverPoint = Rand.NextInt(1, parent.Count - 1);
 
             var child1Genes = this.GetGenes(0, crossoverPoint).ToList();

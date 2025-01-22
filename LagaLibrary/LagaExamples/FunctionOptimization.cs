@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Laga.GeneticAlgorithm;
-using Laga.Numbers;
+﻿using Laga.Numbers;
+using Laga;
 
-namespace Laga
+namespace LagaExamples
 {
     /// <summary>
     /// FunctionOptimization
@@ -39,7 +34,7 @@ namespace Laga
                 PrintData(population, c);
 
                 population.Selection("roulette", tournamentSize: 10, elitism: true, eliteCount: 60); //selection
-                //population.Crossover("onePointCrossover", 0.75); //crossover
+                population.Crossover("onePointCrossover", 0.75); //crossover
                 population.Mutation("dblRandom", populationRate: pr, chromosomeRate: chr, dMin: 0.0, dMax: 1.0);//mutation
                 population.Evaluation(FitnessFunc); //evaluation
 

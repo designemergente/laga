@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
-using Laga.GeneticAlgorithm;
+using Laga;
 
 namespace Laga.IO
 {
@@ -300,7 +300,7 @@ namespace Laga.IO
                 excelApp.WindowState = Excel.XlWindowState.xlMaximized;
             }
             int c = excelApp.Worksheets.Count; //check the sheetnumber...
-            sheetNum = c;
+            //sheetNum = c;
             if ((sheetNum > c) || (sheetNum < 1)) //means we need to creates a new excel sheet.
             {
                 xlSheet = (Excel.Worksheet)xlBook.Sheets.Add(Type.Missing, xlBook.Sheets[c], 1, Excel.XlSheetType.xlWorksheet);

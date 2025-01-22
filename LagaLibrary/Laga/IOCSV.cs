@@ -1,8 +1,7 @@
-﻿using Laga.GeneticAlgorithm;
+﻿using Laga;
 using System.IO;
 using System;
 using System.Text;
-using System.Runtime.ConstrainedExecution;
 using System.Collections.Generic;
 
 namespace Laga.IO

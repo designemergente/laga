@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Text;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// Different crossover type operations

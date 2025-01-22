@@ -1,5 +1,5 @@
 ﻿
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// GenrPalette basic populations

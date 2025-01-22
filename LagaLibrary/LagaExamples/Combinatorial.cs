@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Laga.GeneticAlgorithm;
+﻿using Laga;
 
 namespace LagaExamples
 {
@@ -47,6 +42,7 @@ namespace LagaExamples
             Console.SetCursorPosition(0, 16);
             Chromosome<char> chr = pop.HighestFitnessChromosome();
             Console.WriteLine("Iter:(" + c + ") > HighestFitness: {0} ,  Average fitness: {1}", chr.Fitness, pop.GetAverageFitness());
+            Console.WriteLine("Targt: p, n, e, u, m, o, n, o, u, l, t, r, a, m, i, c, r, o, s, c, o, p, i, c, s, i, l, i, c, o, v, o, l, c, a, n, o, c, o, n, i, o, s, i, s");
             Console.WriteLine(chr.ToString());
         }
 

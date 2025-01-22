@@ -1,7 +1,7 @@
 ﻿using System;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// To replace old populations with new populations

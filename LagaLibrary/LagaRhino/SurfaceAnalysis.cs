@@ -1,6 +1,6 @@
 ﻿using Rhino.Geometry;
 using System.Collections.Generic;
-using Laga.GeneticAlgorithm;
+using Laga;
 
 namespace LagaRhino
 {

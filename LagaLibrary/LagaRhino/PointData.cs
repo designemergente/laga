@@ -1,4 +1,4 @@
-﻿using Laga.GeneticAlgorithm;
+﻿using Laga;
 using Laga.Geometry;
 using Rhino.Geometry;
 using System;

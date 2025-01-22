@@ -1,5 +1,5 @@
 ﻿using Laga.Numbers;
-using Laga.GeneticAlgorithm;
+using Laga;
 using Laga.Geometry;
 
 

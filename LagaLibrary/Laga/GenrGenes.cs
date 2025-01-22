@@ -2,7 +2,7 @@
 using Laga.Geometry;
 using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// GenrPalette DNA for Chromosome classes

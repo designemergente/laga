@@ -1,4 +1,4 @@
-﻿using Laga.GeneticAlgorithm;
+﻿using Laga;
 using Laga.Geometry;
 using Laga.Numbers;
 

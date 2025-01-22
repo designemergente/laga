@@ -1,6 +1,6 @@
 ﻿using Laga.Numbers;
 
-namespace Laga.GeneticAlgorithm
+namespace Laga
 {
     /// <summary>
     /// To sort chromosomes in populations according to fitness evaluation.
