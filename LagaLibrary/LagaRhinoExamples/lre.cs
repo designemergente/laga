@@ -71,78 +71,10 @@ namespace LagaRhinoExamples
             UserInterface ui = new UserInterface(doc, mode);
             ui.Show();
 
-            /*
-            RhinoApp.WriteLine("optimization start: ");
-            int popSize = 100;
-            double topFitness = 100;
-            double pr = 0.02;
-            double chr = 0.001;
-
-            ObjRef[] obj_ref;
-            Result rs = RhinoGet.GetMultipleObjects("Select points", false, ObjectType.Point, out obj_ref);
-            if (rs != Result.Success)
-                return rs;
-
-            arrpts = new Point3d[obj_ref.Length];
-            for (int i = 0; i < obj_ref.Length; i++)
-                arrpts[i] = new Point3d(obj_ref[i].Point().Location);
-
-            BoundingBox bb = new BoundingBox(arrpts);
-            Point3d ptmin = bb.Min;
-            Point3d ptmax = bb.Max;
-
-            double min = ptmin.X < ptmin.Y ? ptmin.X : ptmin.Y;
-            double max = ptmax.X > ptmax.Y ? ptmax.X : ptmax.Y;
-
-            Population<double> population = new Population<double>();
-            for (int i = 0; i < popSize; i++)
-                population.Add(new Chromosome<double>(FitnessFunc, GenrGenes.RandomChromosome<double>(2, min, max, Rand.NextDouble).ToList()));
-
-            Point3d p = new Point3d();
-            Point3d pp = new Point3d();
-
-            int c = 0;
-            Rhino.DocObjects.Tables.ObjectTable ot;
-
-            while (topFitness >= 0.001) //Genetic loop
-            {
-                topFitness = population.LowestFitnessChromosome().Fitness;
-                RhinoApp.WriteLine("iteration: [" + c.ToString() + "]  " + population.LowestFitnessChromosome().ToString());
-                p = new Point3d(population.LowestFitnessChromosome().GetGene(0), population.LowestFitnessChromosome().GetGene(1), 0);
-
-                if (pp != p)
-                {
-                    pp = p;
-
-                    ot = doc.Objects;
-                    ot.Delete(ot.ElementAt(0));
-                    doc.Objects.AddPoint(p);
-                }
-                doc.Views.Redraw();
-
-                population.Selection("roulette", tournamentSize: 10, invert: true, elitism: true, eliteCount: 20); //selection
-                population.Crossover("onePointCrossover", 0.2); //crossover
-                population.Mutation("dblRandom", populationRate: pr, chromosomeRate: chr, dMin: min, dMax: max);//mutation
-                population.Evaluation(FitnessFunc); //evaluation
-
-                c++;
-            }
-            */
-
             return Result.Success;
         }
 
-        private static Func<Chromosome<double>, double> FitnessFunc = chromosome =>
-        {
-            double x = chromosome.GetGene(0);
-            double y = chromosome.GetGene(1);
-            Point3d target = new Point3d(x, y, 0);
 
-            var distances = arrpts.Select(point => point.DistanceTo(target)).ToList();
-            double average = distances.Average();
-            double deviation = distances.Select(distance => Math.Pow(distance - average, 2)).Sum();
-            return deviation;
-        };
 
     }
 }

@@ -29,7 +29,7 @@ namespace LagaExamples
                 PrintData(population, c);
 
                population.Selection("roulette", invert: true, elitism: true, eliteCount: 2); //selection
-               population.Crossover("onePointCrossover", 0.50); //crossover
+               population.Crossover("onePoint", 0.50); //crossover
                population.Mutation("binary", populationRate: pr, chromosomeRate: chr);//mutation
                population.Evaluation(FitnessFunc); //evaluation
                 

@@ -170,6 +170,7 @@ namespace Laga
         }
 
         #region Crossover
+
         /// <summary>
         /// Perform a crossover with another chromosome using a specified function.
         /// </summary>
@@ -196,11 +197,67 @@ namespace Laga
         }
 
         /// <summary>
+        /// Perform a crossover with another chromosome using a specified function.
+        /// </summary>
+        /// <param name="parent">The other parent chromosome</param>
+        /// <returns>Tuple containing two new Chromosome offspring</returns>
+        public (Chromosome<T> child1, Chromosome<T> child2) ShuffleOnePointCrossover(Chromosome<T> parent)
+        {
+            // Ensure the parent chromosome has enough genes for crossover
+            if (parent.Count <= 2)
+            {
+                // Small chromosomes: directly swap the genes
+                var child1 = new List<T> { parent.GetGene(1), this.GetGene(0) };
+                var child2 = new List<T> { this.GetGene(1), parent.GetGene(0) };
+                return (new Chromosome<T>(child1), new Chromosome<T>(child2));
+            }
+
+            // Randomly select a crossover point
+            int crossoverPoint = Rand.NextInt(1, parent.Count - 1);
+
+            // Initialize child genes
+            var child1Genes = new List<T>(parent.Count);
+            var child2Genes = new List<T>(parent.Count);
+
+            // Create mappings to track assigned genes for validation
+            HashSet<T> child1GeneSet = new HashSet<T>();
+            HashSet<T> child2GeneSet = new HashSet<T>();
+
+            // Add genes from the first segment up to the crossover point
+            child1Genes.AddRange(this.GetGenes(0, crossoverPoint));
+            child1GeneSet.UnionWith(this.GetGenes(0, crossoverPoint));
+
+            child2Genes.AddRange(parent.GetGenes(0, crossoverPoint));
+            child2GeneSet.UnionWith(parent.GetGenes(0, crossoverPoint));
+
+            // Complete children by filling in missing genes while maintaining order
+            foreach (var gene in parent.GetGenes(crossoverPoint, parent.Count))
+            {
+                if (!child1GeneSet.Contains(gene))
+                {
+                    child1Genes.Add(gene);
+                    child1GeneSet.Add(gene);
+                }
+            }
+
+            foreach (var gene in this.GetGenes(crossoverPoint, this.Count))
+            {
+                if (!child2GeneSet.Contains(gene))
+                {
+                    child2Genes.Add(gene);
+                    child2GeneSet.Add(gene);
+                }
+            }
+
+            return (new Chromosome<T>(child1Genes), new Chromosome<T>(child2Genes));
+        }
+
+        /// <summary>
         /// Not implemented yet.
         /// </summary>
         /// <param name="parent"></param>
         /// <returns></returns>
-        public (Chromosome<T>, Chromosome<T>) TwoPointCrossover(Chromosome<T> parent)
+        public (Chromosome<T>, Chromosome<T>) TwoPointsCrossover(Chromosome<T> parent)
         {
             return (new Chromosome<T>(), new Chromosome<T>());
         }

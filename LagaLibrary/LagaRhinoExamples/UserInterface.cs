@@ -8,6 +8,7 @@ using Eto.Drawing;
 using System.Net.Security;
 using Rhino;
 using Rhino.Commands;
+using Rhino.Geometry;
 
 namespace LagaRhinoExamples
 {
@@ -16,70 +17,44 @@ namespace LagaRhinoExamples
     /// </summary>
     public class UserInterface : Form
     {
+        private readonly RhinoDoc rhinoDocument;
         public UserInterface(RhinoDoc doc, RunMode mode)
         {
+            rhinoDocument = doc;
             Title = "LagaRhino examples";
             ClientSize = new Size(300, 500);
-            Content = new Label { Text = "hi" };
+            BackgroundColor = Colors.White;
+            
+            Button cirBtn = new Button();
+            cirBtn.Size = new Size(200, 25);
+            cirBtn.BackgroundColor = Colors.LightGrey;
+            cirBtn.Click += cirBtn_Click;
+            cirBtn.Text = "Find center of circle";
+
+            Button tspBtn = new Button();
+            tspBtn.Size = new Size(200, 25);
+            tspBtn.BackgroundColor = Colors.LightGrey;
+            tspBtn.Click += tspBtn_Click;
+            tspBtn.Text = "Travelling sales problem";
 
             StackLayout sl = new StackLayout();
+            sl.AlignLabels = true;
             sl.Padding = 10;
             sl.Orientation = Orientation.Vertical;
-            sl.BackgroundColor = Colors.White;
             sl.Spacing = 5;
-            sl.Items.Add(CreateButton("Find center of circle"));
-            sl.Items.Add(CreateButton("Find the bigger circle"));
-
+            sl.Items.Add(cirBtn);
+            sl.Items.Add(tspBtn);
             this.Content = sl;
-
-            /*
-            ToolBar = new ToolBar
-            {
-                Items =
-                {
-                    new Command(),
-                    new SeparatorToolItem(),
-                    new ButtonToolItem { Text = "Click Me, ToolItem"},
- 
-                }
-            };
-
-            
-            Menu = new MenuBar()
-            {
-                Items =
-                {
-                    new ButtonMenuItem
-                    {
-                        Text = "Examples",
-                        Items =
-                        { 
-				            // you can add commands or menu items
-				            new Command(),
-				            // another menu item, not based off a Command
-				            new ButtonMenuItem { Text = "Click Me 1, MenuItem" },
-                            new ButtonMenuItem { Text = "Click Me 2, MenuItem" }
-                        }
-                    }
-                }
-            };*/
-
         }
 
-        private Button CreateButton(string title)
+        private void tspBtn_Click(object sender, EventArgs e)
         {
-            var button = new Button();
-            button.Size = new Size(200, 25);
-            button.BackgroundColor = Colors.LightGrey;
-            button.Click += Button_Click;
-            button.Text = title;
-            
-            return button;
+            TravellingSales tsp = new TravellingSales(rhinoDocument);
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        private void cirBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("here is call the first example of laga");
+            CircleCenter circle = new CircleCenter(rhinoDocument);
         }
     }
 }

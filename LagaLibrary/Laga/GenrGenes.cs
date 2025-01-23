@@ -42,6 +42,28 @@ namespace Laga
         }
 
         /// <summary>
+        /// the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
+        /// the method is based on integer numbers. this method is designed by combinatorial problems.
+        /// </summary>
+        /// <param name="min">the minimum value in the sequence</param>
+        /// /// <param name="max">the maximum value in the sequence</param>
+        /// <returns>Array</returns>
+        public static Chromosome<int> Shuffle_Integer(int min, int max)
+        {
+            if (min >= max)
+                throw new ArgumentException("the 'min' value must be less than 'max'. ");
+
+            Chromosome<int> arrChr = new Chromosome<int>();
+
+            for (int i = 0; i < (max - min) + 1; i++)
+                arrChr.Add(min + i);
+
+            arrChr.Shuffle();
+
+            return arrChr;
+        }
+
+        /// <summary>
         /// Generates a binary Chromosome of 1s and 0s char type.
         /// </summary>
         /// <param name="size">the length in the Chr</param> 
@@ -86,6 +108,8 @@ namespace Laga
             chrVector.AddGenes(Rand.Vectors(size, Xcoord, Ycoord, Zcoord));
             return chrVector;
         }
+
+
 
     }
 }

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F23D3D7-AF84-43CE-A269-D570A2BFA21D}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\population.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhinoexamples\\lre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|solutionrelative:lagarhinoexamples\\lre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\chromosome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhinoexamples\\travellingsales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|solutionrelative:lagarhinoexamples\\travellingsales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C19906B-8B81-464F-A3B4-A6B44163D527}|Laga\\Laga.csproj|solutionrelative:laga\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhinoexamples\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|solutionrelative:lagarhinoexamples\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|c:\\users\\carlos.delabarrera\\documents\\github\\laga\\lagalibrary\\lagarhinoexamples\\lre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B0C2EA-B137-47D7-912E-228BA20919E8}|LagaRhinoExamples\\LagaRhinoExamples.csproj|solutionrelative:lagarhinoexamples\\lre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 360,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Chromosome.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
+              "RelativeDocumentMoniker": "Laga\\Chromosome.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Chromosome.cs",
+              "RelativeToolTip": "Laga\\Chromosome.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAWwB8BAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:22:44.396Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -35,40 +60,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor",
-              "RelativeDocumentMoniker": "Dashboard\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Dashboard\\_Imports.razor*",
-              "RelativeToolTip": "Dashboard\\_Imports.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T15:14:04.24Z",
+              "Title": "Population.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
+              "RelativeDocumentMoniker": "Laga\\Population.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Population.cs",
+              "RelativeToolTip": "Laga\\Population.cs",
+              "ViewState": "AgIAACABAAAAAAAAAAAgwHQBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T16:12:01.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeDocumentMoniker": "Laga\\Tools.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\Laga\\Tools.cs",
+              "RelativeToolTip": "Laga\\Tools.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAD4v2oBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T15:09:30.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserInterface.cs",
-              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaRhinoExamples\\UserInterface.cs",
-              "RelativeDocumentMoniker": "LagaRhinoExamples\\UserInterface.cs",
-              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\github\\Laga\\LagaLibrary\\LagaRhinoExamples\\UserInterface.cs",
-              "RelativeToolTip": "LagaRhinoExamples\\UserInterface.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBEAAAAFAAAAAAAAAA==",
+              "Title": "TravellingSales.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\TravellingSales.cs",
+              "RelativeDocumentMoniker": "LagaRhinoExamples\\TravellingSales.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\TravellingSales.cs",
+              "RelativeToolTip": "LagaRhinoExamples\\TravellingSales.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T11:59:14.868Z",
+              "WhenOpened": "2025-01-23T13:56:10.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "lre.cs",
               "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\lre.cs",
               "RelativeDocumentMoniker": "LagaRhinoExamples\\lre.cs",
               "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\lre.cs",
               "RelativeToolTip": "LagaRhinoExamples\\lre.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAApwBwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T09:47:42.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\UserInterface.cs",
+              "RelativeDocumentMoniker": "LagaRhinoExamples\\UserInterface.cs",
+              "ToolTip": "C:\\Users\\Carlos.delabarrera\\Documents\\Github\\Laga\\LagaLibrary\\LagaRhinoExamples\\UserInterface.cs",
+              "RelativeToolTip": "LagaRhinoExamples\\UserInterface.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAD4vxMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:59:14.868Z",
               "EditorCaption": ""
             }
           ]

@@ -210,34 +210,7 @@ namespace Laga
         }
 
 
-        /// <summary>
-        /// the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
-        /// the method is based on integer numbers. this method is designed by combinatorial problems.
-        /// </summary>
-        /// <param name="min">the minimum value in the sequence</param>
-        /// /// <param name="max">the maximum value in the sequence</param>
-        /// <returns>a non repeat random integer list</returns>
-        /// <example>
-        /// <code>
-        /// GenrChromosome Chr = new GenrChromosome(5);
-        /// char[] Chrom = Chr.NumberChromosomeSwap(0, 4);
-        /// 
-        /// results:
-        /// 4, 1, 0, 2, 3
-        /// 3, 1, 2, 0, 4
-        /// </code>
-        /// </example>
-        public int[] NumberChromosomeSwap(int min, int max)
-        {
-            int[] chr = new int[(max - min) + 1];
-            int count = 0;
-            for (int i = min; i < max + 1; i++)
-            {
-                chr[count] = i;
-                count++;
-            }
-            return Tools.Fisher_Yates(chr);
-        }
+
 
         /// <summary>
         /// GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.

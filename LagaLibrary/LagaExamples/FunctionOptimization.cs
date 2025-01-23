@@ -34,7 +34,7 @@ namespace LagaExamples
                 PrintData(population, c);
 
                 population.Selection("roulette", tournamentSize: 10, elitism: true, eliteCount: 60); //selection
-                population.Crossover("onePointCrossover", 0.75); //crossover
+                population.Crossover("onePoint", 0.75); //crossover
                 population.Mutation("dblRandom", populationRate: pr, chromosomeRate: chr, dMin: 0.0, dMax: 1.0);//mutation
                 population.Evaluation(FitnessFunc); //evaluation
 

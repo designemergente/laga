@@ -35,7 +35,7 @@
           "lib/net45/_._": {}
         }
       },
-      "Laga/2025.1.22": {
+      "Laga/2025.1.23": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -154,7 +154,7 @@
         "version.txt"
       ]
     },
-    "Laga/2025.1.22": {
+    "Laga/2025.1.23": {
       "type": "project",
       "path": "../Laga/Laga.csproj",
       "msbuildProject": "../Laga/Laga.csproj"
@@ -162,7 +162,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Laga >= 2025.1.22"
+      "Laga >= 2025.1.23"
     ]
   },
   "packageFolders": {
@@ -191,6 +191,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -218,7 +219,7 @@
     "frameworks": {
       "net48": {
         "targetAlias": "net48",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

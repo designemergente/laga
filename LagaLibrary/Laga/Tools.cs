@@ -150,6 +150,7 @@ namespace Laga.Numbers
             return ts;
         }
 
+        /*
         /// <summary>
         /// Reverse the original Population
         /// </summary>
@@ -239,7 +240,9 @@ namespace Laga.Numbers
             string[] arrString = Array.ConvertAll(any, new Converter<char, string>(Convert.ToString));
             return arrString;
         }
+        */
 
+        /*
         /// <summary>
         /// Reverse the original array of floats.
         /// </summary>
@@ -344,26 +347,24 @@ namespace Laga.Numbers
                 objPop[objPop.Length - i - 1] = temp;
             }
         }
+        */
 
         /// <summary>
-        /// Fisher-Yates Shuffle Algorithm for array of integers.
+        /// Shuffle algorithm for array of integers.
         /// </summary>
-        /// <param name="arrInt">The array of integers to shuffle</param>
+        /// <param name="arrayInt">The array of integers to shuffle</param>
         /// <returns></returns>
         /// 
-        public static int[] Fisher_Yates(int[] arrInt)
+        public static int[] Shuffle(int[] arrayInt)
         {
-            int cant = arrInt.Length;
-
-            int[] arrMut = new int[cant];
-            Array.Copy(arrInt, arrMut, cant);
-
-            for (int i = 0; i < cant; i++)
+            for (int i = arrayInt.Length - 1; i > 0 ; i--)
             {
-                int index = i + (int)(Rand.NextDouble() * (cant - i));
-                (arrMut[i], arrMut[index]) = (arrMut[index], arrMut[i]);
+                int j = Rand.NextInt(0, i + 1);
+                int temp = arrayInt[i];
+                arrayInt[i] = arrayInt[j];
+                arrayInt[j] = temp;
             }
-            return arrMut;
+            return arrayInt;
         }
 
         /// <summary>
@@ -474,7 +475,7 @@ namespace Laga.Numbers
             int[] arrIndexSelected = new int[size];
 
             int[] arrIndex = Enumerable.Range(min, max).ToArray();
-            arrIndex = Fisher_Yates(arrIndex);
+            arrIndex = Shuffle(arrIndex);
 
             for (int i = 0; i < size; i++)
             {
@@ -499,7 +500,7 @@ namespace Laga.Numbers
             
 
             int[] arrIndex = Enumerable.Range(0, lengthPop).ToArray();
-            arrIndex = Fisher_Yates(arrIndex);
+            arrIndex = Shuffle(arrIndex);
 
             int[] arrIndexSelected = new int[size];
             for (int i = 0; i < size; i++)

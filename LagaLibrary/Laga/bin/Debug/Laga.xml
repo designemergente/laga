@@ -428,104 +428,11 @@
             <param name="genArray">The array where to extract the values</param>
             <returns>Generic Array</returns>
         </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Char[][])">
+        <member name="M:Laga.Numbers.Tools.Shuffle(System.Int32[])">
             <summary>
-            Reverse the original Population
+            Shuffle algorithm for array of integers.
             </summary>
-            <param name="charPop">char[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Prefix(System.String,System.Int32)">
-            <summary>
-            GenrPalette prefixs.
-            </summary>
-            <param name="prefix">string prefix</param>
-            <param name="size">the length of prefix to generate</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ParseDblToFloat(System.Double,System.Int32)">
-            <summary>
-            Parse a double to float
-            </summary>
-            <param name="dbl">the double to convert</param>
-            <param name="digits">the numbers to round, default is 3</param>
-            <returns>float</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Double[])">
-            <summary>
-            Parse any Chromosome type to string Array
-            </summary>
-            <param name="any">double[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Int32[])">
-            <summary>
-            Parse a list of integers into a list of strings
-            </summary>
-            <param name="any">int[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Single[])">
-            <summary>
-            Parse a list of floats into a list of strings
-            </summary>
-            <param name="any">float[]</param>
-            <returns>string[]</returns>
-            
-        </member>
-        <member name="M:Laga.Numbers.Tools.Parse(System.Char[])">
-            <summary>
-            Parse a list of char to a list of strings
-            </summary>
-            <param name="any">char[]</param>
-            <returns>string[]</returns>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Single[])">
-            <summary>
-            Reverse the original array of floats.
-            </summary>
-            <param name="arrFloat">float[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Int32[])">
-            <summary>
-            Reverse the original array of integers
-            </summary>
-            <param name="arrInt">int[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Reverse(System.Double[])">
-            <summary>
-            Reverse the original array of doubles
-            </summary>
-            <param name="arrDbl">double[]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Int32[][])">
-            <summary>
-            Reverse Original integer population
-            </summary>
-            <param name="intPop">int[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Double[][])">
-            <summary>
-            Reverse original double population
-            </summary>
-            <param name="dblPop">double[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Single[][])">
-            <summary>
-            Reverse original float population
-            </summary>
-            <param name="flPop">float[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.ReversePopulation(System.Object[][])">
-            <summary>
-            Reverse original object population
-            </summary>
-            <param name="objPop">object[][]</param>
-        </member>
-        <member name="M:Laga.Numbers.Tools.Fisher_Yates(System.Int32[])">
-            <summary>
-            Fisher-Yates Shuffle Algorithm for array of integers.
-            </summary>
-            <param name="arrInt">The array of integers to shuffle</param>
+            <param name="arrayInt">The array of integers to shuffle</param>
             <returns></returns>
             
         </member>
@@ -1134,25 +1041,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Laga.GenrChromosome.NumberChromosomeSwap(System.Int32,System.Int32)">
-            <summary>
-            the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
-            the method is based on integer numbers. this method is designed by combinatorial problems.
-            </summary>
-            <param name="min">the minimum value in the sequence</param>
-            /// <param name="max">the maximum value in the sequence</param>
-            <returns>a non repeat random integer list</returns>
-            <example>
-            <code>
-            GenrChromosome Chr = new GenrChromosome(5);
-            char[] Chrom = Chr.NumberChromosomeSwap(0, 4);
-            
-            results:
-            4, 1, 0, 2, 3
-            3, 1, 2, 0, 4
-            </code>
-            </example>
-        </member>
         <member name="M:Laga.GenrChromosome.DNA_ShuffleInteger(System.Int32,System.Int32)">
             <summary>
             GenrPalette a Chromosome composed by non repeated integers between min and max included, designed for combinatorial problems.
@@ -1241,6 +1129,15 @@
             </summary>
             /// <param name="size">the number of integers in the Chr</param> 
             <returns>int Chromosome</returns>
+        </member>
+        <member name="M:Laga.GenrGenes.Shuffle_Integer(System.Int32,System.Int32)">
+            <summary>
+            the method generate a number Chr composed by non repeated numbers between start and start + size(not inclusive).
+            the method is based on integer numbers. this method is designed by combinatorial problems.
+            </summary>
+            <param name="min">the minimum value in the sequence</param>
+            /// <param name="max">the maximum value in the sequence</param>
+            <returns>Array</returns>
         </member>
         <member name="M:Laga.GenrGenes.Binary_Char(System.Int32)">
             <summary>

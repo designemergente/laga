@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Laga.Numbers;
 
 namespace Laga
 {
@@ -312,11 +313,14 @@ namespace Laga
                     Chromosome<T> child1, child2;
                     switch (method.ToLower())
                     {
-                        case "onepointcrossover":
+                        case "onepoint":
                             (child1, child2) = parent1.OnePointCrossover(parent2);
                             break;
-                        case "twopointcrossover":
-                            (child1, child2) = parent1.TwoPointCrossover(parent2);
+                        case "shuffleonepoint":
+                            (child1, child2) = parent1.ShuffleOnePointCrossover(parent2);
+                            break;
+                        case "twopoints":
+                            (child1, child2) = parent1.TwoPointsCrossover(parent2);
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");
@@ -364,6 +368,10 @@ namespace Laga
                             break;
                         case "dblrandom": //only for binary chromosomes...
                             mutatedChromosome = (Chromosome<T>)(object)mutatedChromosome.dblRandom(chromosomeRate, dMin, dMax);
+                            break;
+                        case "shuffle": //only for binary chromosomes...
+                            if(Rand.NextDouble() < chromosomeRate)
+                                mutatedChromosome.Shuffle();
                             break;
                         default:
                             throw new InvalidOperationException($"Crossover method '{method}' not supported.");
