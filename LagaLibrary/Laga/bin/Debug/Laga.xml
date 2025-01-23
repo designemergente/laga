@@ -102,7 +102,14 @@
             <param name="parent">The other parent chromosome</param>
             <returns>Tuple containing two new Chromosome offspring</returns>
         </member>
-        <member name="M:Laga.Chromosome`1.TwoPointCrossover(Laga.Chromosome{`0})">
+        <member name="M:Laga.Chromosome`1.ShuffleOnePointCrossover(Laga.Chromosome{`0})">
+            <summary>
+            Perform a crossover with another chromosome using a specified function.
+            </summary>
+            <param name="parent">The other parent chromosome</param>
+            <returns>Tuple containing two new Chromosome offspring</returns>
+        </member>
+        <member name="M:Laga.Chromosome`1.TwoPointsCrossover(Laga.Chromosome{`0})">
             <summary>
             Not implemented yet.
             </summary>
